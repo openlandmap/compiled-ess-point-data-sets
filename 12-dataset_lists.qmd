@@ -1,0 +1,84 @@
+# Monitoring networks and datasets
+
+## Global Permanent Monitoring Networks
+
+Monitoring networks that still collect in-situ Observations & Measurements and 
+where the data is imported, quality controlled and served by a national or international organization.
+
+### NOAA Global Surface Summary of the Day - GSOD
+
+_Description_: Contains daily data from over 9000 stations (data from 1973 to the present) on Mean temperature (.1 Fahrenheit) Mean dew point (.1 Fahrenheit) Mean sea level pressure (.1 mb) Mean station pressure (.1 mb) Mean visibility (.1 miles) Mean wind speed (.1 knots) Maximum sustained wind speed (.1 knots) Maximum wind gust (.1 knots) Maximum temperature (.1 Fahrenheit) Minimum temperature (.1 Fahrenheit) Precipitation amount (.01 inches) Snow depth (.1 inches) Indicator for occurrence of: Fog, Rain or Drizzle, Snow or Ice Pellets, Hail, Thunder and similar. 
+
+```{r point-map-gsod, echo=FALSE, fig.cap="Distribution of GSOD points. Image source: NOAA.", out.width="100%"}
+knitr::include_graphics("images/point-map-gsod.png")
+```
+
+- `r emo::ji("link")` Project website: <https://catalog.data.gov/dataset/global-surface-summary-of-the-day-gsod/>  
+- `r emo::ji("open_file_folder")` Data download URL: <https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/>  
+- `r emo::ji("news")` Data license:   
+- `r emo::ji("closed_book")` Sparks, A. H., Hengl, T., & Nelson, A. (2017). [GSODR: global summary daily weather data in R](https://doi.org/10.21105/joss.00177). Journal of open source software, 2(10), 177.  
+- `r emo::ji("round_pushpin")` Unique locations: +9000  
+- `r emo::ji("clipboard")` Unique complete rows:   
+- `r emo::ji("memo")` Tutorials & documentation: <https://docs.ropensci.org/GSODR/>  
+
+### Climate TRACE
+
+_Description_: Climate TRACE provides an inventory of major source of greenhouse gas (GHG) emissions 
+around the world and provides independently produced estimates of how much each emits (points and polygons) [@whitmee2023accountability].
+
+```{r point-map-climatetrace, echo=FALSE, fig.cap="Distribution of Climate TRACE points. Image source: The Climate TRACE coalition.", out.width="100%"}
+knitr::include_graphics("images/point-map-climatetrace.jpg")
+```
+
+- `r emo::ji("link")` Project website: <https://climatetrace.org/>  
+- `r emo::ji("open_file_folder")` Data download URL: <https://climatetrace.org/data/>  
+- `r emo::ji("news")` Data license: <https://roots.ornl.gov/guidelines/>  
+- `r emo::ji("closed_book")` Whitmee, S., Anton, B., & Haines, A. (2023). [Accountability for carbon emissions and health equity](https://doi.org/10.2471%2FBLT.22.289452). Bulletin of the World Health Organization, 101(2), 83.   
+- `r emo::ji("round_pushpin")` Unique locations: 352 million emitting assets  
+- `r emo::ji("clipboard")` Unique complete rows: +1 billion  
+- `r emo::ji("memo")` Tutorials & documentation: <https://api.climatetrace.org/v4/swagger/>  
+
+
+## Global (original) reference data sets
+
+Original data sets produced by a single group or project (hence NOT compilations!) 
+that are global but are not regularly updated i.e. do not stream live data.
+
+### Globe230k
+
+_Description_: Globe230k is a benchmark dataset for Global Land Cover Mapping 
+which includes [cca 230,000 annotated images](https://doi.org/10.5281/zenodo.8429200) with a size of 512 × 512 and a spatial resolution of 1-m [@Shi2023].
+
+```{r point-map-globe230k, echo=FALSE, fig.cap="Distribution of Globe230k locations. Image source: @Shi2023.", out.width="100%"}
+knitr::include_graphics("images/point-map-globe230k.jpg")
+```
+
+- `r emo::ji("link")` Project website:  
+- `r emo::ji("open_file_folder")` Data download URL: <https://zenodo.org/doi/10.5281/zenodo.8429199>  
+- `r emo::ji("news")` Data license: CC-BY  
+- `r emo::ji("closed_book")` Shi, Q., He, D., Liu, Z., Liu, X., & Xue, J. (2023). [Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping](https://doi.org/10.34133/remotesensing.0078). Journal of Remote Sensing, 3, 0078.   
+- `r emo::ji("round_pushpin")` Unique locations: 6,500  
+- `r emo::ji("clipboard")` Unique complete rows: +1 billion  
+- `r emo::ji("memo")` Tutorials & documentation:  
+
+
+## Global compilations of data sets
+
+### Fine Root Ecology Database: FRED (compilation)
+
+_Description_: Originally a plant root database but also contains some soil laboratory data 
+and soil observations. Fully documented in @iversen2017global.
+
+```{r point-map-fred-v3, echo=FALSE, fig.cap="Distribution of FRED points. Image source: Oak Ridge National Laboratory.", out.width="100%"}
+knitr::include_graphics("images/point-map-fred-v3.png")
+```
+
+- `r emo::ji("link")` Project website: <https://roots.ornl.gov/>  
+- `r emo::ji("open_file_folder")` Data download URL: <https://doi.org/10.25581/ornlsfa.014/1459186>  
+- `r emo::ji("news")` Data license: <https://roots.ornl.gov/guidelines/>  
+- `r emo::ji("closed_book")` Iversen, C. M., McCormack, M. L., Powell, A. S., Blackwood, C. B., Freschet, G. T., Kattge, J., ... & Violle, C. (2017). [A global Fine‐Root Ecology Database to address below‐ground challenges in plant ecology](https://doi.org/10.1111/nph.14486). New Phytologist, 215(1), 15-26.   
+- `r emo::ji("round_pushpin")` Unique locations:  
+- `r emo::ji("clipboard")` Unique complete rows: 150,000  
+- `r emo::ji("memo")` Tutorials & documentation: <https://roots.ornl.gov/guidelines/>  
+
+

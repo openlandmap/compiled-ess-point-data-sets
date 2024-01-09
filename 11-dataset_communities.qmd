@@ -1,0 +1,49 @@
+# Data communities
+
+To follow progress of the soil data compilations consider connecting to some of the 
+active communities / registering for the mailing lists and/or discussion groups.
+
+## Degree Confluence project
+
+[Degree Confluence project](http://confluence.org/) 
+
+## European Marine Observation and Data Network (EMODnet)
+
+[European Marine Observation and Data Network (EMODnet)](https://emodnet.ec.europa.eu/en) gathers 
+
+## FLUXNET global network
+
+[FLUXNET global network](https://fluxnet.fluxdata.org/) 
+
+## FLUXNET global network
+
+[FLUXNET global network](https://fluxnet.fluxdata.org/) 
+[AmeriFlux](https://ameriflux.lbl.gov/about/about-ameriflux/) 
+
+## Global Biodiversity Information Facility (GBIF)
+
+[Global Biodiversity Information Facility (GBIF)](https://www.gbif.org) 
+
+## Geo-wiki
+
+[Geo-wiki data sets](https://www.geo-wiki.org/pages/data)
+
+## International Soil Moisture Network
+
+[International Soil Moisture Network](https://ismn.geo.tuwien.ac.at/en/)
+
+## International Soil Carbon Network
+
+[International Soil Carbon Network](http://iscn.fluxdata.org/)
+
+## Long Term Ecological Research (LTER) Network
+
+[Long Term Ecological Research (LTER) Network sites](https://lternet.edu/site/) 
+[The National Ecological Observatory Network (NEON)](https://www.neonscience.org/data),
+[Long-Term Ecosystem Research in Europe (eLTER)](https://www.lter-europe.net/) 
+[Chinese Ecosystem Research Network (CERN)](http://www.cern.ac.cn/0index/index.asp) 
+[Terrestrial Ecosystem Research Network (TERN) Australia](https://portal.tern.org.au/) 
+
+## WMO Global Observatory System
+
+[WMO Global Observatory System](http://public.wmo.int/en/programmes/global-observing-system)

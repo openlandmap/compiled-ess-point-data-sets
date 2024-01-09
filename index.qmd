@@ -1,0 +1,148 @@
+# Welcome {.unnumbered}
+
+This repository contains a review of Global in-situ Observations & Measurements networks 
+and data sets, and a number of compiled and analysis ready point (spatial) data sets that 
+can be used for training global spatial prediction models or similar analysis. It is has been 
+developed within the [OpenLandMap.org](https://openlandmap.github.io/book/) platform and its main objective is [**to support a more reproducible and a more collaborative global modeling and analysis of environmental and Earth System Science variables**](https://opengeohub.org/about-openlandmap/). 
+We focus on meteorological variables [@sparks2017gsodr], land cover and vegetation observations 
+[@Fritz2017SD; @hengl2018global], plant roots [@FRED2018] and plant traits [@kattge2020try], 
+soil variables [@batjes2017wosis; @hengl2017soilgrids250m; @panagos2017global], water 
+dynamics [@pena2018synergies], and measurements of fluxes and ecosystem services [@ukkola2017fluxnetlsm; @kulmala2018build; @essd-2020-136], 
+although the list will be continuously updated and extended. 
+
+For practical purposes, we have organized the monitoring networks and data sets around the following themes 
+(based on the [UN-GGIM The Global Fundamental Geospatial Data Themes](https://ggim.un.org/meetings/GGIM-committee/9th-Session/documents/Fundamental_Data_Publication.pdf)):
+- Buildings and Settlements,
+- Elevation and Depth,
+- Geology and Soils,
+- Land Cover and Land Use,
+- Population Distribution,
+- Water,
+- Physical Infrastructure,
+- Climate (_added entry_),
+- Biodiversity and Nature Conservation (_added entry_),
+
+## Download compiled data {.unnumbered}
+
+Compiled data (imported, standardized, quality-controlled) is available 
+through a diversity of standard formats:
+
+- CSV file (compressed using giz to reduce download time);
+- RDS file (native R data format);
+- GPKG file ([Geopackage file](https://www.geopackage.org/) ready to be opened in QGIS);
+
+All files can be downloaded from the `/out` [directory](https://github.com/openlandmap/compiled-ess-point-data-sets/-/tree/master/out).
+
+## Add your own data {.unnumbered}
+
+The minimum requirements to submit a dataset for inclusion to [the
+OpenLandMap repository](https://github.com/openlandmap/) are:
+
+-   **Global coverage** (or at least aiming at the global coverage) AND,\
+-   License and terms of use clearly specified AND,\
+-   Complete and consistent metadata that can ensure correct
+    standardization and harmonization steps AND,\
+-   At least 50 unique spatial locations AND,\
+-   No broken or invalid URLs,
+
+Data sets that do NOT satisfy the above listed minimum requirements might be
+removed. If you discover an issue with license, data description or
+version number of a dataset, please open a [Github
+issue](https://github.com/openlandmap/compiled-ess-point-data-sets/issues).
+
+Recommended settings for all datasets are:
+
+-   Peer-reviewed versions of the datasets (i.e. a dataset accompanied
+    with a peer-reviewed publication) should have the priority,\
+-   Register your dataset (use e.g. <https://zenodo.org>) and assign a DOI
+    to each version,\
+-   Provide enough metadata so that it can be imported and bind with
+    other data without errors,\
+-   If your dataset is a compilation of previously published datasets, please 
+    indicate in the description,
+
+Information outdated or missing? Please open an issue or best do a
+correction and then a [pull
+request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## License {.unnumbered}
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-Share Alike 4.0 International License</a>.
+
+## Disclaimer {.unnumbered}
+
+Use liability: OpenGeoHub foundations cannot provide any warranty as to the accuracy, 
+reliability, or completeness of furnished data. Users assume responsibility to determine 
+the usability of these data. The user is responsible for the results of any application 
+of this data for other than its intended purpose.
+
+Distribution liability: OpenGeoHub foundations make no warranty, expressed or implied, 
+regarding these data, nor does the fact of distribution constitute such a warranty. 
+OpenGeoHub foundations cannot assume liability for any damages caused by any errors or 
+omissions in these data. If appropriate, OpenGeoHub foundations can only certify that 
+the data it distributes are an authentic copy of the records that were accepted for 
+inclusion in the OpenGeoHub foundations archives.
+
+## How to cite {.unnumbered}
+
+To cite this document please use:
+
+```
+@book{ess.data_2023,
+  author       = {Hengl, T., Sabatini, S., Parente, L., Ho, Y.-F., Witjes, M., and contributors},
+  title        = {{A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets}},
+  year         = {2024},
+  publisher    = {OpenGeoHub foundation},
+  address      = {Wageningen},
+  version      = {v0.1},
+  doi          = {10.5281/zenodo.10466903},
+  url          = {https://openlandmap.github.io/compiled-ess-point-data-sets/}
+}
+```
+
+## Contribute 
+
+To add a new dataset, please follow these steps:
+
+1.  Click on the edit button on the book homepage,\
+2.  Login to Github.com and select "Start a pull-request",\
+3.  Add new references to `12-dataset_lists.qmd` and save,\
+4.  Commit and push and make a [pull
+request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).\
+5.  Once received we will check it and if you have followed the instructions closely, 
+    the reference will appear in the document as soon as the code is merged with the master,\
+
+```{r pull-request, echo=FALSE, fig.cap="Example of a pull request on Github.com.", out.width="50%"}
+knitr::include_graphics("images/example_pull_request.jpg")
+```
+
+If you're new to markdown and want to learn how to use it, please refer to [this tutorial](https://guides.github.com/features/mastering-markdown/).
+
+## About OpenGeoHub {.unnumbered}
+
+[<img src="./images/opengeohub_logo_ml.png" alt="OpenGeoHub logo" width="350"/>](https://opengeohub.org)
+
+**OpenGeoHub foundation** is a not-for-profit research foundation
+located in Wageningen, the Netherlands. We specifically promote
+publishing and sharing of Open Geographical and Geoscientific Data,
+using and developing Open Source Software and encouraging and empowering
+under-represented researchers e.g. those from ODA recipient countries
+and female researchers. We believe that the key measure of quality of
+research in all sciences (and especially in geographical information
+sciences) is in transparency and reproducibility of the computer code
+used to generate results (read more in: ["Everyone has a right to know what is happening with the planet"](https://opengeohub.medium.com/)).
+
+[OpenLandMap](https://openlandmap.github.io/book/) represents data (global land mass), services and web-apps providing 
+access and interactive visualizations of the Terabytes of high resolution data 
+(1-km, 250-m, 100-m, 30-m or finer) produced by the OpenGeoHub Foundation 
+and/or contributing organizations. 
+
+[OpenLandMap](https://openlandmap.github.io/book/) is an Open Land Data project, mainly inspired by the [OpenStreetMap](https://openstreetmap.org) 
+project: you are free to use OpenLandMap data for any purpose as long as you 
+credit OpenLandMap and its contributors. If you alter or build upon the data 
+in certain ways, you may distribute the result only under the same licence. 
+See the [Copyright and License page](https://opengeohub.org/about-openlandmap/) for details.
+
+## Acknowledgments {.unnumbered}
+
+**[EarthMonitor.org](https://EarthMonitor.org/)** project has received funding from the European Union's Horizon Europe research an innovation programme under grant agreement **[No. 101059548](https://cordis.europa.eu/project/id/101059548)**.

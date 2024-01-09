@@ -1,0 +1,20 @@
+# Preface {.unnumbered}
+
+## Who this book is for
+
+This repository contains a review of Global in-situ Observations & Measurements 
+networks and data sets, and a number of compiled and analysis ready point (spatial) 
+data sets that can be used for training global spatial prediction models or similar 
+analysis. It is has been developed within the www.OpenLandMap.org and Open-Earth-Monitor 
+Cyberinfrastructure projects (https://earthmonitor.org). The main objective of this 
+compendium is to support a more reproducible and a more collaborative global modeling 
+and analysis of environmental and Earth System Science variables.
+
+## Compiled data sets
+
+We provide code and examples of how to generate so-called **Analysis-Ready training 
+data sets**. Some minimum conditions for a data set to be analysis ready include:
+
+-  It requires no special pre-processing to remove artifacts, harmonize values within columns, bind or subset data;
+-  It comes with extensive metadata so that there is no mistake about how was the data collected, prepared and distributed and by whom;
+-  It is ready in some standard format e.g. GeoPackage or GeoParquet; we recommend using **(open) cloud-native data formats** to distribute data (especially for large data) either [Geoparquet](https://geoparquet.org/) / [Flatgeobuf](https://flatgeobuf.org/) and similar;

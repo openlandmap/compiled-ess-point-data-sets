@@ -1,0 +1,26 @@
+project:
+  type: book
+
+book:
+  title: "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets"
+  cover-image: "images/cover.svg"
+  author: "Tomislav Hengl (OpenGeoHub), Simone Sabbatini (CMCC), Leandro Parente (OpenGeoHub), Yu-feng Ho (OpenGeoHub), Martijn Witjes (OpenGeoHub)"
+  date: today
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - part: "Part I: Compendium"
+      chapters:
+        - 11-dataset_communities.qmd
+        - 12-dataset_lists.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: solar
+    mermaid:
+      theme: dark
