@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets"

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>dataset_lists</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="monitoring-networks-and-datasets" class="level1">
+<h1>Monitoring networks and datasets</h1>
+<section id="global-permanent-monitoring-networks" class="level2">
+<h2 class="anchored" data-anchor-id="global-permanent-monitoring-networks">Global Permanent Monitoring Networks</h2>
+<p>Monitoring networks that still collect in-situ Observations &amp; Measurements and where the data is imported, quality controlled and served by a national or international organization.</p>
+<section id="noaa-global-surface-summary-of-the-day---gsod" class="level3">
+<h3 class="anchored" data-anchor-id="noaa-global-surface-summary-of-the-day---gsod">NOAA Global Surface Summary of the Day - GSOD</h3>
+<p><em>Description</em>: Contains daily data from over 9000 stations (data from 1973 to the present) on Mean temperature (.1 Fahrenheit) Mean dew point (.1 Fahrenheit) Mean sea level pressure (.1 mb) Mean station pressure (.1 mb) Mean visibility (.1 miles) Mean wind speed (.1 knots) Maximum sustained wind speed (.1 knots) Maximum wind gust (.1 knots) Maximum temperature (.1 Fahrenheit) Minimum temperature (.1 Fahrenheit) Precipitation amount (.01 inches) Snow depth (.1 inches) Indicator for occurrence of: Fog, Rain or Drizzle, Snow or Ice Pellets, Hail, Thunder and similar.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/point-map-gsod.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Distribution of GSOD points. Image source: NOAA.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>🔗 Project website: <a href="https://catalog.data.gov/dataset/global-surface-summary-of-the-day-gsod/" class="uri">https://catalog.data.gov/dataset/global-surface-summary-of-the-day-gsod/</a><br>
+</li>
+<li>📂 Data download URL: <a href="https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/" class="uri">https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/</a><br>
+</li>
+<li>📰 Data license:<br>
+</li>
+<li>📕 Sparks, A. H., Hengl, T., &amp; Nelson, A. (2017). <a href="https://doi.org/10.21105/joss.00177">GSODR: global summary daily weather data in R</a>. Journal of open source software, 2(10), 177.<br>
+</li>
+<li>📍 Unique locations: +9000<br>
+</li>
+<li>📋 Unique complete rows:<br>
+</li>
+<li>📝 Tutorials &amp; documentation: <a href="https://docs.ropensci.org/GSODR/" class="uri">https://docs.ropensci.org/GSODR/</a></li>
+</ul>
+</section>
+<section id="climate-trace" class="level3">
+<h3 class="anchored" data-anchor-id="climate-trace">Climate TRACE</h3>
+<p><em>Description</em>: Climate TRACE provides an inventory of major source of greenhouse gas (GHG) emissions around the world and provides independently produced estimates of how much each emits (points and polygons) <span class="citation" data-cites="whitmee2023accountability">(<a href="#ref-whitmee2023accountability" role="doc-biblioref">Whitmee, Anton, and Haines 2023</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/point-map-climatetrace.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Distribution of Climate TRACE points. Image source: The Climate TRACE coalition.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>🔗 Project website: <a href="https://climatetrace.org/" class="uri">https://climatetrace.org/</a><br>
+</li>
+<li>📂 Data download URL: <a href="https://climatetrace.org/data/" class="uri">https://climatetrace.org/data/</a><br>
+</li>
+<li>📰 Data license: <a href="https://roots.ornl.gov/guidelines/" class="uri">https://roots.ornl.gov/guidelines/</a><br>
+</li>
+<li>📕 Whitmee, S., Anton, B., &amp; Haines, A. (2023). <a href="https://doi.org/10.2471%2FBLT.22.289452">Accountability for carbon emissions and health equity</a>. Bulletin of the World Health Organization, 101(2), 83.<br>
+</li>
+<li>📍 Unique locations: 352 million emitting assets<br>
+</li>
+<li>📋 Unique complete rows: +1 billion<br>
+</li>
+<li>📝 Tutorials &amp; documentation: <a href="https://api.climatetrace.org/v4/swagger/" class="uri">https://api.climatetrace.org/v4/swagger/</a></li>
+</ul>
+</section>
+</section>
+<section id="global-original-reference-data-sets" class="level2">
+<h2 class="anchored" data-anchor-id="global-original-reference-data-sets">Global (original) reference data sets</h2>
+<p>Original data sets produced by a single group or project (hence NOT compilations!) that are global but are not regularly updated i.e.&nbsp;do not stream live data.</p>
+<section id="globe230k" class="level3">
+<h3 class="anchored" data-anchor-id="globe230k">Globe230k</h3>
+<p><em>Description</em>: Globe230k is a benchmark dataset for Global Land Cover Mapping which includes <a href="https://doi.org/10.5281/zenodo.8429200">cca 230,000 annotated images</a> with a size of 512 × 512 and a spatial resolution of 1-m <span class="citation" data-cites="Shi2023">(<a href="#ref-Shi2023" role="doc-biblioref">Shi et al. 2023</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/point-map-globe230k.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Distribution of Globe230k locations. Image source: <span class="citation" data-cites="Shi2023">Shi et al. (<a href="#ref-Shi2023" role="doc-biblioref">2023</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>🔗 Project website:<br>
+</li>
+<li>📂 Data download URL: <a href="https://zenodo.org/doi/10.5281/zenodo.8429199" class="uri">https://zenodo.org/doi/10.5281/zenodo.8429199</a><br>
+</li>
+<li>📰 Data license: CC-BY<br>
+</li>
+<li>📕 Shi, Q., He, D., Liu, Z., Liu, X., &amp; Xue, J. (2023). <a href="https://doi.org/10.34133/remotesensing.0078">Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping</a>. Journal of Remote Sensing, 3, 0078.<br>
+</li>
+<li>📍 Unique locations: 6,500<br>
+</li>
+<li>📋 Unique complete rows: +1 billion<br>
+</li>
+<li>📝 Tutorials &amp; documentation:</li>
+</ul>
+</section>
+</section>
+<section id="global-compilations-of-data-sets" class="level2">
+<h2 class="anchored" data-anchor-id="global-compilations-of-data-sets">Global compilations of data sets</h2>
+<section id="fine-root-ecology-database-fred-compilation" class="level3">
+<h3 class="anchored" data-anchor-id="fine-root-ecology-database-fred-compilation">Fine Root Ecology Database: FRED (compilation)</h3>
+<p><em>Description</em>: Originally a plant root database but also contains some soil laboratory data and soil observations. Fully documented in <span class="citation" data-cites="iversen2017global">Iversen et al. (<a href="#ref-iversen2017global" role="doc-biblioref">2017</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/point-map-fred-v3.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Distribution of FRED points. Image source: Oak Ridge National Laboratory.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>🔗 Project website: <a href="https://roots.ornl.gov/" class="uri">https://roots.ornl.gov/</a><br>
+</li>
+<li>📂 Data download URL: <a href="https://doi.org/10.25581/ornlsfa.014/1459186" class="uri">https://doi.org/10.25581/ornlsfa.014/1459186</a><br>
+</li>
+<li>📰 Data license: <a href="https://roots.ornl.gov/guidelines/" class="uri">https://roots.ornl.gov/guidelines/</a><br>
+</li>
+<li>📕 Iversen, C. M., McCormack, M. L., Powell, A. S., Blackwood, C. B., Freschet, G. T., Kattge, J., … &amp; Violle, C. (2017). <a href="https://doi.org/10.1111/nph.14486">A global Fine‐Root Ecology Database to address below‐ground challenges in plant ecology</a>. New Phytologist, 215(1), 15-26.<br>
+</li>
+<li>📍 Unique locations:<br>
+</li>
+<li>📋 Unique complete rows: 150,000<br>
+</li>
+<li>📝 Tutorials &amp; documentation: <a href="https://roots.ornl.gov/guidelines/" class="uri">https://roots.ornl.gov/guidelines/</a></li>
+</ul>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-iversen2017global" class="csl-entry" role="listitem">
+Iversen, Colleen M, M Luke McCormack, A Shafer Powell, Christopher B Blackwood, Grégoire T Freschet, Jens Kattge, Catherine Roumet, et al. 2017. <span>“A Global Fine-Root Ecology Database to Address Below-Ground Challenges in Plant Ecology.”</span> <em>New Phytologist</em> 215 (1): 15–26. <a href="https://doi.org/10.1111/nph.14486">https://doi.org/10.1111/nph.14486</a>.
+</div>
+<div id="ref-Shi2023" class="csl-entry" role="listitem">
+Shi, Qian, Da He, Zhengyu Liu, Xiaoping Liu, and Jingqian Xue. 2023. <span>“Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping.”</span> <em>Journal of Remote Sensing</em> 3: 0078. <a href="https://doi.org/10.34133/remotesensing.0078">https://doi.org/10.34133/remotesensing.0078</a>.
+</div>
+<div id="ref-whitmee2023accountability" class="csl-entry" role="listitem">
+Whitmee, Sarah, Blanca Anton, and Andy Haines. 2023. <span>“Accountability for Carbon Emissions and Health Equity.”</span> <em>Bulletin of the World Health Organization</em> 101 (2): 83. <a href="https://doi.org/10.2471/BLT.22.289452">https://doi.org/10.2471/BLT.22.289452</a>.
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
