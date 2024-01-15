@@ -1,25 +1,79 @@
-project:
-  type: book
-  output-dir: docs
 
-book:
-  title: "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets"
-  cover-image: "images/cover.svg"
-  author: "Tomislav Hengl (OpenGeoHub), Simone Sabbatini (CMCC), Leandro Parente (OpenGeoHub), Yu-feng Ho (OpenGeoHub), Martijn Witjes (OpenGeoHub)"
-  date: today
-  chapters:
+project:
+  type: website
+  output-dir: docs
+  render:
     - index.qmd
     - preface.qmd
-    - part: "Part I: Compendium"
-      chapters:
-        - 11-dataset_communities.qmd
-        - 12-dataset_lists.qmd
-    - references.qmd
+    - 11-dataset_communities.qmd
+    - 12-dataset_lists.qmd
+    - 21-ard_biomes.qmd
+
+website:
+  navbar:
+    tools:
+    - icon: mastodon
+      href: https://fosstodon.org/@opengeohub
+    - icon: medium
+      href: https://opengeohub.medium.com/
+    - icon: twitter
+      href: https://twitter.com/opengeohub
+    - icon: github
+      menu:
+      - text: Source Code
+        url:  https://github.com/openlandmap/compiled-ess-point-data-sets
+      - text: Report a Bug
+        url:  https://github.com/openlandmap/compiled-ess-point-data-sets/issues
+    background: light
+    search: true
+    logo: ./images/openlandmap_v2_logo.png
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "OpenLandMap App"
+        file: https://OpenLandMap.org
+      - text: "Open-Earth-Monitor"
+        file: https://EarthMonitor.org
+  reader-mode: true
+  repo-url: https://github.com/openlandmap/compiled-ess-point-data-sets
+  repo-actions: [edit, issue]
+  sidebar:
+    style: "docked"
+    contents:
+      - section: "Original data sets"
+        contents:
+          - index.qmd
+          - preface.qmd
+          - 11-dataset_communities.qmd
+          - 12-dataset_lists.qmd
+      - section: "Compiled data sets"
+        contents:
+          - 21-ard_biomes.qmd
+  page-footer:
+    background: light
+    left: "© 2024, OpenGeoHub foundation"
+    right:
+      - icon: github
+        href: https://github.com/openlandmap/compiled-ess-point-data-sets
+      - icon: mastodon
+        href: https://fosstodon.org/@opengeohub
+      - icon: twitter
+        href: https://twitter.com/opengeohub
+      - icon: linkedin
+        href: https://www.linkedin.com/company/opengeohub-foundation/
+      - icon: youtube
+        href: https://www.youtube.com/c/OpenGeoHubFoundation
+  title: "Open Land Data services"
+  twitter-card:
+    image: "images/cover.png"
+  open-graph:
+    description: "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets. The compiled data sets are intended to be analysis-ready and are used to produce global predictions of various layers published via OpenLandMap.org."
 
 bibliography: references.bib
 
 format:
   html:
+    toc: true
     theme:
       light: flatly
       dark: solar

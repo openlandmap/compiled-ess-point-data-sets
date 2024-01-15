@@ -1,198 +1,386 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
+    "objectID": "21-ard_biomes.html",
+    "href": "21-ard_biomes.html",
+    "title": "Training points for mapping biomes",
     "section": "",
-    "text": "Welcome\nThis repository contains a review of Global in-situ Observations & Measurements networks and data sets, and a number of compiled and analysis ready point (spatial) data sets that can be used for training global spatial prediction models or similar analysis. It is has been developed within the OpenLandMap.org platform and its main objective is to support a more reproducible and a more collaborative global modeling and analysis of environmental and Earth System Science variables. We focus on meteorological variables (Sparks, Hengl, and Nelson 2017), land cover and vegetation observations (Fritz et al. 2017; Hengl et al. 2018), plant roots (Iversen et al. 2018) and plant traits (Kattge et al. 2020), soil variables (Batjes et al. 2017; Hengl et al. 2017; Panagos et al. 2017), water dynamics (Pena Luque 2018), and measurements of fluxes and ecosystem services (Ukkola et al. 2017; Kulmala 2018; Jian et al. 2020), although the list will be continuously updated and extended.\nFor practical purposes, we have organized the monitoring networks and data sets around the following themes (based on the UN-GGIM The Global Fundamental Geospatial Data Themes): - Buildings and Settlements, - Elevation and Depth, - Geology and Soils, - Land Cover and Land Use, - Population Distribution, - Water, - Physical Infrastructure, - Climate (added entry), - Biodiversity and Nature Conservation (added entry),"
+    "text": "This script explains steps used to produce a compilation of training points to map global biomes. These steps are also explained in detail in Hengl et al. (2018). The biomes data set is also explained in detail in Bonannella et al. (2023).\n\n\n\n\n\n\n\n\nARD training points for mapping biomes.\n\n\n\n\n\n\n\nTo cite this data set please use:\n@book{pnv.biomes_2023,\n  author       = {Hengl, T.},\n  title        = {{Potential distribution of biomes (Potential \n                   Natural Vegetation) at 250 m spatial resolution}},\n  year         = {2024},\n  publisher    = {OpenGeoHub foundation},\n  address      = {Wageningen},\n  version      = {v0.2},\n  doi          = {10.5281/zenodo.3526620},\n  url          = {https://openlandmap.github.io/compiled-ess-point-data-sets/}\n}",
+    "crumbs": [
+      "Home",
+      "Compiled data sets",
+      "Training points for mapping biomes"
+    ]
   },
   {
-    "objectID": "index.html#download-compiled-data",
-    "href": "index.html#download-compiled-data",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
-    "section": "Download compiled data",
-    "text": "Download compiled data\nCompiled data (imported, standardized, quality-controlled) is available through a diversity of standard formats:\n\nCSV file (compressed using giz to reduce download time);\nRDS file (native R data format);\nGPKG file (Geopackage file ready to be opened in QGIS);\n\nAll files can be downloaded from the /out directory."
-  },
-  {
-    "objectID": "index.html#add-your-own-data",
-    "href": "index.html#add-your-own-data",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
-    "section": "Add your own data",
-    "text": "Add your own data\nThe minimum requirements to submit a dataset for inclusion to the OpenLandMap repository are:\n\nGlobal coverage (or at least aiming at the global coverage) AND,\n\nLicense and terms of use clearly specified AND,\n\nComplete and consistent metadata that can ensure correct standardization and harmonization steps AND,\n\nAt least 50 unique spatial locations AND,\n\nNo broken or invalid URLs,\n\nData sets that do NOT satisfy the above listed minimum requirements might be removed. If you discover an issue with license, data description or version number of a dataset, please open a Github issue.\nRecommended settings for all datasets are:\n\nPeer-reviewed versions of the datasets (i.e. a dataset accompanied with a peer-reviewed publication) should have the priority,\n\nRegister your dataset (use e.g. https://zenodo.org) and assign a DOI to each version,\n\nProvide enough metadata so that it can be imported and bind with other data without errors,\n\nIf your dataset is a compilation of previously published datasets, please indicate in the description,\n\nInformation outdated or missing? Please open an issue or best do a correction and then a pull request."
-  },
-  {
-    "objectID": "index.html#license",
-    "href": "index.html#license",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
-    "section": "License",
-    "text": "License\nThis work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License."
-  },
-  {
-    "objectID": "index.html#disclaimer",
-    "href": "index.html#disclaimer",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
-    "section": "Disclaimer",
-    "text": "Disclaimer\nUse liability: OpenGeoHub foundations cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpose.\nDistribution liability: OpenGeoHub foundations make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. OpenGeoHub foundations cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, OpenGeoHub foundations can only certify that the data it distributes are an authentic copy of the records that were accepted for inclusion in the OpenGeoHub foundations archives."
-  },
-  {
-    "objectID": "index.html#how-to-cite",
-    "href": "index.html#how-to-cite",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
-    "section": "How to cite",
-    "text": "How to cite\nTo cite this document please use:\n@book{ess.data_2023,\n  author       = {Hengl, T., Sabatini, S., Parente, L., Ho, Y.-F., Witjes, M., and contributors},\n  title        = {{A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets}},\n  year         = {2024},\n  publisher    = {OpenGeoHub foundation},\n  address      = {Wageningen},\n  version      = {v0.1},\n  doi          = {10.5281/zenodo.10466903},\n  url          = {https://openlandmap.github.io/compiled-ess-point-data-sets/}\n}"
-  },
-  {
-    "objectID": "index.html#contribute",
-    "href": "index.html#contribute",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
-    "section": "Contribute",
-    "text": "Contribute\nTo add a new dataset, please follow these steps:\n\nClick on the edit button on the book homepage,\n\nLogin to Github.com and select “Start a pull-request”,\n\nAdd new references to 12-dataset_lists.qmd and save,\n\nCommit and push and make a pull request.\n\nOnce received we will check it and if you have followed the instructions closely, the reference will appear in the document as soon as the code is merged with the master,\n\n\n\n\n\n\n\nExample of a pull request on Github.com.\n\n\n\n\nIf you’re new to markdown and want to learn how to use it, please refer to this tutorial."
-  },
-  {
-    "objectID": "index.html#about-opengeohub",
-    "href": "index.html#about-opengeohub",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
-    "section": "About OpenGeoHub",
-    "text": "About OpenGeoHub\n\nOpenGeoHub foundation is a not-for-profit research foundation located in Wageningen, the Netherlands. We specifically promote publishing and sharing of Open Geographical and Geoscientific Data, using and developing Open Source Software and encouraging and empowering under-represented researchers e.g. those from ODA recipient countries and female researchers. We believe that the key measure of quality of research in all sciences (and especially in geographical information sciences) is in transparency and reproducibility of the computer code used to generate results (read more in: “Everyone has a right to know what is happening with the planet”).\nOpenLandMap represents data (global land mass), services and web-apps providing access and interactive visualizations of the Terabytes of high resolution data (1-km, 250-m, 100-m, 30-m or finer) produced by the OpenGeoHub Foundation and/or contributing organizations.\nOpenLandMap is an Open Land Data project, mainly inspired by the OpenStreetMap project: you are free to use OpenLandMap data for any purpose as long as you credit OpenLandMap and its contributors. If you alter or build upon the data in certain ways, you may distribute the result only under the same licence. See the Copyright and License page for details."
-  },
-  {
-    "objectID": "index.html#acknowledgments",
-    "href": "index.html#acknowledgments",
-    "title": "A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nEarthMonitor.org project has received funding from the European Union’s Horizon Europe research an innovation programme under grant agreement No. 101059548.\n\n\n\n\nBatjes, Niels H, Eloi Ribeiro, Ad van Oostrum, Johan Leenaars, Tom Hengl, and Jorge Mendes de Jesus. 2017. “WoSIS: Providing Standardised Soil Profile Data for the World.” Earth System Science Data 9 (1): 1. https://doi.org/10.5194/essd-9-1-2017.\n\n\nFritz, Steffen, Linda See, Christoph Perger, Ian McCallum, Christian Schill, Dmitry Schepaschenko, Martina Duerauer, et al. 2017. “A Global Dataset of Crowdsourced Land Cover and Land Use Reference Data.” Scientific Data 4 (June): 170075. https://doi.org/10.1038/sdata.2017.75.\n\n\nHengl, Tomislav, Jorge Mendes de Jesus, Gerard BM Heuvelink, Maria Ruiperez Gonzalez, Milan Kilibarda, Aleksandar Blagotić, Wei Shangguan, et al. 2017. “SoilGrids250m: Global Gridded Soil Information Based on Machine Learning.” PLoS One 12 (2). https://doi.org/10.1371/journal.pone.0169748.\n\n\nHengl, Tomislav, Markus G Walsh, Jonathan Sanderman, Ichsani Wheeler, Sandy P Harrison, and Iain C Prentice. 2018. “Global Mapping of Potential Natural Vegetation: An Assessment of Machine Learning Algorithms for Estimating Land Potential.” PeerJ 6: e5457. https://doi.org/10.7717/peerj.5457.\n\n\nIversen, CM, AS Powell, ML McCormack, CB Blackwood, GT Freschet, J Kattge, C Roumet, et al. 2018. Fine-Root Ecology Database (FRED): A Global Collection of Root Trait Data with Coincident Site, Vegetation, Edaphic, and Climatic Data, Version 2. TES SFA, U.S. Department of Energy, Oak Ridge, Tennessee, U.S.A.: Oak Ridge National Laboratory. https://doi.org/10.25581/ornlsfa.012/1417481.\n\n\nJian, J., R. Vargas, K. Anderson-Teixeira, E. Stell, V. Herrmann, M. Horn, N. Kholod, et al. 2020. “A Restructured and Updated Global Soil Respiration Database (SRDB-V5).” Earth System Science Data Discussions 2020: 1–19. https://doi.org/10.5194/essd-2020-136.\n\n\nKattge, Jens, Gerhard Bönisch, Sandra Dı́az, Sandra Lavorel, Iain Colin Prentice, Paul Leadley, Susanne Tautenhahn, et al. 2020. “TRY Plant Trait Database–Enhanced Coverage and Open Access.” Global Change Biology 26 (1): 119–88. https://doi.org/10.1111/gcb.14904.\n\n\nKulmala, Markku. 2018. “Build a Global Earth Observatory.” Nature Publishing Group. https://doi.org/10.1038/d41586-017-08967-y.\n\n\nPanagos, Panos, Pasquale Borrelli, Katrin Meusburger, Bofu Yu, Andreas Klik, Kyoung Jae Lim, Jae E Yang, et al. 2017. “Global Rainfall Erosivity Assessment Based on High-Temporal Resolution Rainfall Records.” Scientific Reports 7 (1): 1–12. https://doi.org/10.1038/s41598-017-04282-8.\n\n\nPena Luque, S. 2018. “Synergies of a High Resolution and Multi-Source Water Surface Product \"SurfWater\" in an Integrated Water Database: Hydroweb-NG.” AGUFM 2018: H23C–07.\n\n\nSparks, Adam, Tomislav Hengl, and Andrew Nelson. 2017. “GSODR: Global Summary Daily Weather Data in R.” Journal of Open Source Software 2 (10): 177.\n\n\nUkkola, AM, N Haughton, MG De Kauwe, G Abramowitz, and AJ Pitman. 2017. “FluxnetLSM R package (v1. 0): a community tool for processing FLUXNET data for use in land surface modelling.” Geosci. Model Dev. https://doi.org/10.5194/gmd-10-3379-2017."
-  },
-  {
-    "objectID": "preface.html",
-    "href": "preface.html",
-    "title": "Preface",
+    "objectID": "21-ard_biomes.html#backgrounds",
+    "href": "21-ard_biomes.html#backgrounds",
+    "title": "Training points for mapping biomes",
     "section": "",
-    "text": "This repository contains a review of Global in-situ Observations & Measurements networks and data sets, and a number of compiled and analysis ready point (spatial) data sets that can be used for training global spatial prediction models or similar analysis. It is has been developed within the www.OpenLandMap.org and Open-Earth-Monitor Cyberinfrastructure projects (https://earthmonitor.org). The main objective of this compendium is to support a more reproducible and a more collaborative global modeling and analysis of environmental and Earth System Science variables.\n\n\n\nWe provide code and examples of how to generate so-called Analysis-Ready training data sets. Some minimum conditions for a data set to be analysis ready include:\n\nIt requires no special pre-processing to remove artifacts, harmonize values within columns, bind or subset data;\nIt comes with extensive metadata so that there is no mistake about how was the data collected, prepared and distributed and by whom;\nIt is ready in some standard format e.g. GeoPackage or GeoParquet; we recommend using (open) cloud-native data formats to distribute data (especially for large data) either Geoparquet / Flatgeobuf and similar;"
+    "text": "This script explains steps used to produce a compilation of training points to map global biomes. These steps are also explained in detail in Hengl et al. (2018). The biomes data set is also explained in detail in Bonannella et al. (2023).",
+    "crumbs": [
+      "Home",
+      "Compiled data sets",
+      "Training points for mapping biomes"
+    ]
   },
   {
-    "objectID": "preface.html#who-this-book-is-for",
-    "href": "preface.html#who-this-book-is-for",
-    "title": "Preface",
+    "objectID": "21-ard_biomes.html#processing-steps",
+    "href": "21-ard_biomes.html#processing-steps",
+    "title": "Training points for mapping biomes",
     "section": "",
-    "text": "This repository contains a review of Global in-situ Observations & Measurements networks and data sets, and a number of compiled and analysis ready point (spatial) data sets that can be used for training global spatial prediction models or similar analysis. It is has been developed within the www.OpenLandMap.org and Open-Earth-Monitor Cyberinfrastructure projects (https://earthmonitor.org). The main objective of this compendium is to support a more reproducible and a more collaborative global modeling and analysis of environmental and Earth System Science variables."
+    "text": "ARD training points for mapping biomes.",
+    "crumbs": [
+      "Home",
+      "Compiled data sets",
+      "Training points for mapping biomes"
+    ]
   },
   {
-    "objectID": "preface.html#compiled-data-sets",
-    "href": "preface.html#compiled-data-sets",
-    "title": "Preface",
+    "objectID": "21-ard_biomes.html#how-to-cite",
+    "href": "21-ard_biomes.html#how-to-cite",
+    "title": "Training points for mapping biomes",
     "section": "",
-    "text": "We provide code and examples of how to generate so-called Analysis-Ready training data sets. Some minimum conditions for a data set to be analysis ready include:\n\nIt requires no special pre-processing to remove artifacts, harmonize values within columns, bind or subset data;\nIt comes with extensive metadata so that there is no mistake about how was the data collected, prepared and distributed and by whom;\nIt is ready in some standard format e.g. GeoPackage or GeoParquet; we recommend using (open) cloud-native data formats to distribute data (especially for large data) either Geoparquet / Flatgeobuf and similar;"
-  },
-  {
-    "objectID": "12-dataset_lists.html",
-    "href": "12-dataset_lists.html",
-    "title": "Monitoring networks and datasets",
-    "section": "",
-    "text": "Monitoring networks that still collect in-situ Observations & Measurements and where the data is imported, quality controlled and served by a national or international organization.\n\n\nDescription: Contains daily data from over 9000 stations (data from 1973 to the present) on Mean temperature (.1 Fahrenheit) Mean dew point (.1 Fahrenheit) Mean sea level pressure (.1 mb) Mean station pressure (.1 mb) Mean visibility (.1 miles) Mean wind speed (.1 knots) Maximum sustained wind speed (.1 knots) Maximum wind gust (.1 knots) Maximum temperature (.1 Fahrenheit) Minimum temperature (.1 Fahrenheit) Precipitation amount (.01 inches) Snow depth (.1 inches) Indicator for occurrence of: Fog, Rain or Drizzle, Snow or Ice Pellets, Hail, Thunder and similar.\n\n\n\n\n\nDistribution of GSOD points. Image source: NOAA.\n\n\n\n\n\n🔗 Project website: https://catalog.data.gov/dataset/global-surface-summary-of-the-day-gsod/\n\n📂 Data download URL: https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/\n\n📰 Data license:\n\n📕 Sparks, A. H., Hengl, T., & Nelson, A. (2017). GSODR: global summary daily weather data in R. Journal of open source software, 2(10), 177.\n\n📍 Unique locations: +9000\n\n📋 Unique complete rows:\n\n📝 Tutorials & documentation: https://docs.ropensci.org/GSODR/\n\n\n\n\nDescription: Climate TRACE provides an inventory of major source of greenhouse gas (GHG) emissions around the world and provides independently produced estimates of how much each emits (points and polygons) (Whitmee, Anton, and Haines 2023).\n\n\n\n\n\nDistribution of Climate TRACE points. Image source: The Climate TRACE coalition.\n\n\n\n\n\n🔗 Project website: https://climatetrace.org/\n\n📂 Data download URL: https://climatetrace.org/data/\n\n📰 Data license: https://roots.ornl.gov/guidelines/\n\n📕 Whitmee, S., Anton, B., & Haines, A. (2023). Accountability for carbon emissions and health equity. Bulletin of the World Health Organization, 101(2), 83.\n\n📍 Unique locations: 352 million emitting assets\n\n📋 Unique complete rows: +1 billion\n\n📝 Tutorials & documentation: https://api.climatetrace.org/v4/swagger/\n\n\n\n\n\nOriginal data sets produced by a single group or project (hence NOT compilations!) that are global but are not regularly updated i.e. do not stream live data.\n\n\nDescription: Globe230k is a benchmark dataset for Global Land Cover Mapping which includes cca 230,000 annotated images with a size of 512 × 512 and a spatial resolution of 1-m (Shi et al. 2023).\n\n\n\n\n\nDistribution of Globe230k locations. Image source: Shi et al. (2023).\n\n\n\n\n\n🔗 Project website:\n\n📂 Data download URL: https://zenodo.org/doi/10.5281/zenodo.8429199\n\n📰 Data license: CC-BY\n\n📕 Shi, Q., He, D., Liu, Z., Liu, X., & Xue, J. (2023). Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping. Journal of Remote Sensing, 3, 0078.\n\n📍 Unique locations: 6,500\n\n📋 Unique complete rows: +1 billion\n\n📝 Tutorials & documentation:\n\n\n\n\n\n\n\nDescription: Originally a plant root database but also contains some soil laboratory data and soil observations. Fully documented in Iversen et al. (2017).\n\n\n\n\n\nDistribution of FRED points. Image source: Oak Ridge National Laboratory.\n\n\n\n\n\n🔗 Project website: https://roots.ornl.gov/\n\n📂 Data download URL: https://doi.org/10.25581/ornlsfa.014/1459186\n\n📰 Data license: https://roots.ornl.gov/guidelines/\n\n📕 Iversen, C. M., McCormack, M. L., Powell, A. S., Blackwood, C. B., Freschet, G. T., Kattge, J., … & Violle, C. (2017). A global Fine‐Root Ecology Database to address below‐ground challenges in plant ecology. New Phytologist, 215(1), 15-26.\n\n📍 Unique locations:\n\n📋 Unique complete rows: 150,000\n\n📝 Tutorials & documentation: https://roots.ornl.gov/guidelines/\n\n\n\n\n\nIversen, Colleen M, M Luke McCormack, A Shafer Powell, Christopher B Blackwood, Grégoire T Freschet, Jens Kattge, Catherine Roumet, et al. 2017. “A Global Fine-Root Ecology Database to Address Below-Ground Challenges in Plant Ecology.” New Phytologist 215 (1): 15–26. https://doi.org/10.1111/nph.14486.\n\n\nShi, Qian, Da He, Zhengyu Liu, Xiaoping Liu, and Jingqian Xue. 2023. “Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping.” Journal of Remote Sensing 3: 0078. https://doi.org/10.34133/remotesensing.0078.\n\n\nWhitmee, Sarah, Blanca Anton, and Andy Haines. 2023. “Accountability for Carbon Emissions and Health Equity.” Bulletin of the World Health Organization 101 (2): 83. https://doi.org/10.2471/BLT.22.289452."
-  },
-  {
-    "objectID": "12-dataset_lists.html#global-permanent-monitoring-networks",
-    "href": "12-dataset_lists.html#global-permanent-monitoring-networks",
-    "title": "Monitoring networks and datasets",
-    "section": "",
-    "text": "Monitoring networks that still collect in-situ Observations & Measurements and where the data is imported, quality controlled and served by a national or international organization.\n\n\nDescription: Contains daily data from over 9000 stations (data from 1973 to the present) on Mean temperature (.1 Fahrenheit) Mean dew point (.1 Fahrenheit) Mean sea level pressure (.1 mb) Mean station pressure (.1 mb) Mean visibility (.1 miles) Mean wind speed (.1 knots) Maximum sustained wind speed (.1 knots) Maximum wind gust (.1 knots) Maximum temperature (.1 Fahrenheit) Minimum temperature (.1 Fahrenheit) Precipitation amount (.01 inches) Snow depth (.1 inches) Indicator for occurrence of: Fog, Rain or Drizzle, Snow or Ice Pellets, Hail, Thunder and similar.\n\n\n\n\n\nDistribution of GSOD points. Image source: NOAA.\n\n\n\n\n\n🔗 Project website: https://catalog.data.gov/dataset/global-surface-summary-of-the-day-gsod/\n\n📂 Data download URL: https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/\n\n📰 Data license:\n\n📕 Sparks, A. H., Hengl, T., & Nelson, A. (2017). GSODR: global summary daily weather data in R. Journal of open source software, 2(10), 177.\n\n📍 Unique locations: +9000\n\n📋 Unique complete rows:\n\n📝 Tutorials & documentation: https://docs.ropensci.org/GSODR/\n\n\n\n\nDescription: Climate TRACE provides an inventory of major source of greenhouse gas (GHG) emissions around the world and provides independently produced estimates of how much each emits (points and polygons) (Whitmee, Anton, and Haines 2023).\n\n\n\n\n\nDistribution of Climate TRACE points. Image source: The Climate TRACE coalition.\n\n\n\n\n\n🔗 Project website: https://climatetrace.org/\n\n📂 Data download URL: https://climatetrace.org/data/\n\n📰 Data license: https://roots.ornl.gov/guidelines/\n\n📕 Whitmee, S., Anton, B., & Haines, A. (2023). Accountability for carbon emissions and health equity. Bulletin of the World Health Organization, 101(2), 83.\n\n📍 Unique locations: 352 million emitting assets\n\n📋 Unique complete rows: +1 billion\n\n📝 Tutorials & documentation: https://api.climatetrace.org/v4/swagger/"
-  },
-  {
-    "objectID": "12-dataset_lists.html#global-original-reference-data-sets",
-    "href": "12-dataset_lists.html#global-original-reference-data-sets",
-    "title": "Monitoring networks and datasets",
-    "section": "",
-    "text": "Original data sets produced by a single group or project (hence NOT compilations!) that are global but are not regularly updated i.e. do not stream live data.\n\n\nDescription: Globe230k is a benchmark dataset for Global Land Cover Mapping which includes cca 230,000 annotated images with a size of 512 × 512 and a spatial resolution of 1-m (Shi et al. 2023).\n\n\n\n\n\nDistribution of Globe230k locations. Image source: Shi et al. (2023).\n\n\n\n\n\n🔗 Project website:\n\n📂 Data download URL: https://zenodo.org/doi/10.5281/zenodo.8429199\n\n📰 Data license: CC-BY\n\n📕 Shi, Q., He, D., Liu, Z., Liu, X., & Xue, J. (2023). Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping. Journal of Remote Sensing, 3, 0078.\n\n📍 Unique locations: 6,500\n\n📋 Unique complete rows: +1 billion\n\n📝 Tutorials & documentation:"
-  },
-  {
-    "objectID": "12-dataset_lists.html#global-compilations-of-data-sets",
-    "href": "12-dataset_lists.html#global-compilations-of-data-sets",
-    "title": "Monitoring networks and datasets",
-    "section": "",
-    "text": "Description: Originally a plant root database but also contains some soil laboratory data and soil observations. Fully documented in Iversen et al. (2017).\n\n\n\n\n\nDistribution of FRED points. Image source: Oak Ridge National Laboratory.\n\n\n\n\n\n🔗 Project website: https://roots.ornl.gov/\n\n📂 Data download URL: https://doi.org/10.25581/ornlsfa.014/1459186\n\n📰 Data license: https://roots.ornl.gov/guidelines/\n\n📕 Iversen, C. M., McCormack, M. L., Powell, A. S., Blackwood, C. B., Freschet, G. T., Kattge, J., … & Violle, C. (2017). A global Fine‐Root Ecology Database to address below‐ground challenges in plant ecology. New Phytologist, 215(1), 15-26.\n\n📍 Unique locations:\n\n📋 Unique complete rows: 150,000\n\n📝 Tutorials & documentation: https://roots.ornl.gov/guidelines/\n\n\n\n\n\nIversen, Colleen M, M Luke McCormack, A Shafer Powell, Christopher B Blackwood, Grégoire T Freschet, Jens Kattge, Catherine Roumet, et al. 2017. “A Global Fine-Root Ecology Database to Address Below-Ground Challenges in Plant Ecology.” New Phytologist 215 (1): 15–26. https://doi.org/10.1111/nph.14486.\n\n\nShi, Qian, Da He, Zhengyu Liu, Xiaoping Liu, and Jingqian Xue. 2023. “Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping.” Journal of Remote Sensing 3: 0078. https://doi.org/10.34133/remotesensing.0078.\n\n\nWhitmee, Sarah, Blanca Anton, and Andy Haines. 2023. “Accountability for Carbon Emissions and Health Equity.” Bulletin of the World Health Organization 101 (2): 83. https://doi.org/10.2471/BLT.22.289452."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "References"
+    "text": "To cite this data set please use:\n@book{pnv.biomes_2023,\n  author       = {Hengl, T.},\n  title        = {{Potential distribution of biomes (Potential \n                   Natural Vegetation) at 250 m spatial resolution}},\n  year         = {2024},\n  publisher    = {OpenGeoHub foundation},\n  address      = {Wageningen},\n  version      = {v0.2},\n  doi          = {10.5281/zenodo.3526620},\n  url          = {https://openlandmap.github.io/compiled-ess-point-data-sets/}\n}",
+    "crumbs": [
+      "Home",
+      "Compiled data sets",
+      "Training points for mapping biomes"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html",
     "href": "11-dataset_communities.html",
     "title": "Data communities",
     "section": "",
-    "text": "To follow progress of the soil data compilations consider connecting to some of the active communities / registering for the mailing lists and/or discussion groups.\n\n\nDegree Confluence project\n\n\n\nEuropean Marine Observation and Data Network (EMODnet) gathers\n\n\n\nFLUXNET global network\n\n\n\nFLUXNET global network AmeriFlux\n\n\n\nGlobal Biodiversity Information Facility (GBIF)\n\n\n\nGeo-wiki data sets\n\n\n\nInternational Soil Moisture Network\n\n\n\nInternational Soil Carbon Network\n\n\n\nLong Term Ecological Research (LTER) Network sites The National Ecological Observatory Network (NEON), Long-Term Ecosystem Research in Europe (eLTER) Chinese Ecosystem Research Network (CERN) Terrestrial Ecosystem Research Network (TERN) Australia\n\n\n\nWMO Global Observatory System"
+    "text": "To follow progress of the soil data compilations consider connecting to some of the active communities / registering for the mailing lists and/or discussion groups. Provided list is sorted alhpabetically.\n\n\nDegree Confluence project\n\n\n\nEuropean Marine Observation and Data Network (EMODnet) gathers\n\n\n\nFLUXNET global network\n\n\n\nFLUXNET global network AmeriFlux\n\n\n\nGlobal Biodiversity Information Facility (GBIF)\n\n\n\nGeo-wiki data sets\n\n\n\nInternational Soil Moisture Network\n\n\n\nInternational Soil Carbon Network\n\n\n\nLong Term Ecological Research (LTER) Network sites The National Ecological Observatory Network (NEON), Long-Term Ecosystem Research in Europe (eLTER) Chinese Ecosystem Research Network (CERN) Terrestrial Ecosystem Research Network (TERN) Australia\n\n\n\nWMO Global Observatory System",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#degree-confluence-project",
     "href": "11-dataset_communities.html#degree-confluence-project",
     "title": "Data communities",
     "section": "",
-    "text": "Degree Confluence project"
+    "text": "Degree Confluence project",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#european-marine-observation-and-data-network-emodnet",
     "href": "11-dataset_communities.html#european-marine-observation-and-data-network-emodnet",
     "title": "Data communities",
     "section": "",
-    "text": "European Marine Observation and Data Network (EMODnet) gathers"
+    "text": "European Marine Observation and Data Network (EMODnet) gathers",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#fluxnet-global-network",
     "href": "11-dataset_communities.html#fluxnet-global-network",
     "title": "Data communities",
     "section": "",
-    "text": "FLUXNET global network"
+    "text": "FLUXNET global network",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#fluxnet-global-network-1",
     "href": "11-dataset_communities.html#fluxnet-global-network-1",
     "title": "Data communities",
     "section": "",
-    "text": "FLUXNET global network AmeriFlux"
+    "text": "FLUXNET global network AmeriFlux",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#global-biodiversity-information-facility-gbif",
     "href": "11-dataset_communities.html#global-biodiversity-information-facility-gbif",
     "title": "Data communities",
     "section": "",
-    "text": "Global Biodiversity Information Facility (GBIF)"
+    "text": "Global Biodiversity Information Facility (GBIF)",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#geo-wiki",
     "href": "11-dataset_communities.html#geo-wiki",
     "title": "Data communities",
     "section": "",
-    "text": "Geo-wiki data sets"
+    "text": "Geo-wiki data sets",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#international-soil-moisture-network",
     "href": "11-dataset_communities.html#international-soil-moisture-network",
     "title": "Data communities",
     "section": "",
-    "text": "International Soil Moisture Network"
+    "text": "International Soil Moisture Network",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#international-soil-carbon-network",
     "href": "11-dataset_communities.html#international-soil-carbon-network",
     "title": "Data communities",
     "section": "",
-    "text": "International Soil Carbon Network"
+    "text": "International Soil Carbon Network",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#long-term-ecological-research-lter-network",
     "href": "11-dataset_communities.html#long-term-ecological-research-lter-network",
     "title": "Data communities",
     "section": "",
-    "text": "Long Term Ecological Research (LTER) Network sites The National Ecological Observatory Network (NEON), Long-Term Ecosystem Research in Europe (eLTER) Chinese Ecosystem Research Network (CERN) Terrestrial Ecosystem Research Network (TERN) Australia"
+    "text": "Long Term Ecological Research (LTER) Network sites The National Ecological Observatory Network (NEON), Long-Term Ecosystem Research in Europe (eLTER) Chinese Ecosystem Research Network (CERN) Terrestrial Ecosystem Research Network (TERN) Australia",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
   },
   {
     "objectID": "11-dataset_communities.html#wmo-global-observatory-system",
     "href": "11-dataset_communities.html#wmo-global-observatory-system",
     "title": "Data communities",
     "section": "",
-    "text": "WMO Global Observatory System"
+    "text": "WMO Global Observatory System",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Data communities"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "This repository contains a review of Global in-situ Observations & Measurements networks and data sets, and a number of compiled and analysis ready point (spatial) data sets that can be used for training global spatial prediction models or similar analysis. It is has been developed within the OpenLandMap.org platform and its main objective is to support a more reproducible and a more collaborative global modeling and analysis of environmental and Earth System Science variables. We focus on meteorological variables (Sparks, Hengl, and Nelson 2017), land cover and vegetation observations (Fritz et al. 2017; Hengl et al. 2018), plant roots (Iversen et al. 2018) and plant traits (Kattge et al. 2020), soil variables (Batjes et al. 2017; Hengl et al. 2017; Panagos et al. 2017), water dynamics (Pena Luque 2018), and measurements of fluxes and ecosystem services (Ukkola et al. 2017; Kulmala 2018; Jian et al. 2020), although the list will be continuously updated and extended.\n\nIf your work / products are cited here, you are for us a champion of open environmental data and we are enormously thankful for your contributions (please never stop!).\nFor practical purposes, we have organized the monitoring networks and data sets around the following themes (based on the UN-GGIM The Global Fundamental Geospatial Data Themes):\n\nBuildings and Settlements,\nElevation and Depth,\nGeology and Soils,\nLand Cover and Land Use,\nPopulation Distribution,\nWater,\nPhysical Infrastructure,\nClimate (added entry),\nBiodiversity and Nature Conservation (added entry),\n\nWe also distinguish between three main types of global data sets:\n\nGlobal Permanent Monitoring Networks: here we only consider monitoring networks that still collect in-situ Observations & Measurements and where the data is imported, quality controlled and served by a national or international organization.\nGlobal (original) reference data sets: these are original data sets usually produced by a single group or project (hence NOT compilations!) that are global, but no new data is added these can NOT be classified as monitoring networks.\nGlobal compilations of data sets: these are combinations of data from various sources combined / bind together to produce a single analysis-ready data set; can be considered of lowest quality from the three types listed.\n\n\n\nCompiled data (imported, standardized, quality-controlled) is available through a diversity of standard formats:\n\nCSV file (compressed using giz to reduce download time);\nRDS file (native R data format);\nGPKG file (Geopackage file ready to be opened in QGIS);\n\nAll files can be downloaded from the /out directory.\n\n\n\nThe minimum requirements to submit a dataset for inclusion to the OpenLandMap repository are:\n\nGlobal coverage (or at least aiming at the global coverage) AND,\n\nLicense and terms of use clearly specified AND,\n\nComplete and consistent metadata that can ensure correct standardization and harmonization steps AND,\n\nAt least 50 unique spatial locations AND,\n\nNo broken or invalid URLs,\n\nData sets that do NOT satisfy the above listed minimum requirements might be removed. If you discover an issue with license, data description or version number of a dataset, please open a Github issue.\nRecommended settings for all datasets are:\n\nPeer-reviewed versions of the datasets (i.e. a dataset accompanied with a peer-reviewed publication) should have the priority,\n\nRegister your dataset (use e.g. https://zenodo.org) and assign a DOI to each version,\n\nProvide enough metadata so that it can be imported and bind with other data without errors,\n\nIf your dataset is a compilation of previously published datasets, please indicate in the description,\n\nInformation outdated or missing? Please open an issue or best do a correction and then a pull request.\n\n\n\nThis work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License.\n\n\n\nUse liability: OpenGeoHub foundations cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpose.\nDistribution liability: OpenGeoHub foundations make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. OpenGeoHub foundations cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, OpenGeoHub foundations can only certify that the data it distributes are an authentic copy of the records that were accepted for inclusion in the OpenGeoHub foundations archives.\n\n\n\nTo cite this document please use:\n@book{ess.data_2023,\n  author       = {Hengl, T., Sabatini, S., Parente, L., Ho, Y.-F., Witjes, M., and contributors},\n  title        = {{A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets}},\n  year         = {2024},\n  publisher    = {OpenGeoHub foundation},\n  address      = {Wageningen},\n  version      = {v0.1},\n  doi          = {10.5281/zenodo.10466903},\n  url          = {https://openlandmap.github.io/compiled-ess-point-data-sets/}\n}\n\n\n\nTo add a new dataset, please follow these steps:\n\nClick on the edit button on the book homepage,\n\nLogin to Github.com and select “Start a pull-request”,\n\nAdd new references to 12-dataset_lists.qmd and save,\n\nCommit and push and make a pull request.\n\nOnce received we will check it and if you have followed the instructions closely, the reference will appear in the document as soon as the code is merged with the master,\n\n\n\n\n\n\n\nExample of a pull request on Github.com.\n\n\n\n\nIf you’re new to markdown and want to learn how to use it, please refer to this tutorial.\n\n\n\n\nOpenGeoHub foundation is a not-for-profit research foundation located in Wageningen, the Netherlands. We specifically promote publishing and sharing of Open Geographical and Geoscientific Data, using and developing Open Source Software and encouraging and empowering under-represented researchers e.g. those from ODA recipient countries and female researchers. We believe that the key measure of quality of research in all sciences (and especially in geographical information sciences) is in transparency and reproducibility of the computer code used to generate results (read more in: “Everyone has a right to know what is happening with the planet”).\nOpenLandMap represents data (global land mass), services and web-apps providing access and interactive visualizations of the Terabytes of high resolution data (1-km, 250-m, 100-m, 30-m or finer) produced by the OpenGeoHub Foundation and/or contributing organizations.\nOpenLandMap is an Open Land Data project, mainly inspired by the OpenStreetMap project: you are free to use OpenLandMap data for any purpose as long as you credit OpenLandMap and its contributors. If you alter or build upon the data in certain ways, you may distribute the result only under the same licence. See the Copyright and License page for details.\n\n\n\nEarthMonitor.org project has received funding from the European Union’s Horizon Europe research an innovation programme under grant agreement No. 101059548.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#download-compiled-data",
+    "href": "index.html#download-compiled-data",
+    "title": "Welcome",
+    "section": "",
+    "text": "Compiled data (imported, standardized, quality-controlled) is available through a diversity of standard formats:\n\nCSV file (compressed using giz to reduce download time);\nRDS file (native R data format);\nGPKG file (Geopackage file ready to be opened in QGIS);\n\nAll files can be downloaded from the /out directory.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#add-your-own-data",
+    "href": "index.html#add-your-own-data",
+    "title": "Welcome",
+    "section": "",
+    "text": "The minimum requirements to submit a dataset for inclusion to the OpenLandMap repository are:\n\nGlobal coverage (or at least aiming at the global coverage) AND,\n\nLicense and terms of use clearly specified AND,\n\nComplete and consistent metadata that can ensure correct standardization and harmonization steps AND,\n\nAt least 50 unique spatial locations AND,\n\nNo broken or invalid URLs,\n\nData sets that do NOT satisfy the above listed minimum requirements might be removed. If you discover an issue with license, data description or version number of a dataset, please open a Github issue.\nRecommended settings for all datasets are:\n\nPeer-reviewed versions of the datasets (i.e. a dataset accompanied with a peer-reviewed publication) should have the priority,\n\nRegister your dataset (use e.g. https://zenodo.org) and assign a DOI to each version,\n\nProvide enough metadata so that it can be imported and bind with other data without errors,\n\nIf your dataset is a compilation of previously published datasets, please indicate in the description,\n\nInformation outdated or missing? Please open an issue or best do a correction and then a pull request.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Welcome",
+    "section": "",
+    "text": "This work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#disclaimer",
+    "href": "index.html#disclaimer",
+    "title": "Welcome",
+    "section": "",
+    "text": "Use liability: OpenGeoHub foundations cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpose.\nDistribution liability: OpenGeoHub foundations make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. OpenGeoHub foundations cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, OpenGeoHub foundations can only certify that the data it distributes are an authentic copy of the records that were accepted for inclusion in the OpenGeoHub foundations archives.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-cite",
+    "href": "index.html#how-to-cite",
+    "title": "Welcome",
+    "section": "",
+    "text": "To cite this document please use:\n@book{ess.data_2023,\n  author       = {Hengl, T., Sabatini, S., Parente, L., Ho, Y.-F., Witjes, M., and contributors},\n  title        = {{A compendium of Global in-situ Earth System Science Observations & Measurments networks and data sets}},\n  year         = {2024},\n  publisher    = {OpenGeoHub foundation},\n  address      = {Wageningen},\n  version      = {v0.1},\n  doi          = {10.5281/zenodo.10466903},\n  url          = {https://openlandmap.github.io/compiled-ess-point-data-sets/}\n}",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#contribute",
+    "href": "index.html#contribute",
+    "title": "Welcome",
+    "section": "",
+    "text": "To add a new dataset, please follow these steps:\n\nClick on the edit button on the book homepage,\n\nLogin to Github.com and select “Start a pull-request”,\n\nAdd new references to 12-dataset_lists.qmd and save,\n\nCommit and push and make a pull request.\n\nOnce received we will check it and if you have followed the instructions closely, the reference will appear in the document as soon as the code is merged with the master,\n\n\n\n\n\n\n\nExample of a pull request on Github.com.\n\n\n\n\nIf you’re new to markdown and want to learn how to use it, please refer to this tutorial.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#about-opengeohub",
+    "href": "index.html#about-opengeohub",
+    "title": "Welcome",
+    "section": "",
+    "text": "OpenGeoHub foundation is a not-for-profit research foundation located in Wageningen, the Netherlands. We specifically promote publishing and sharing of Open Geographical and Geoscientific Data, using and developing Open Source Software and encouraging and empowering under-represented researchers e.g. those from ODA recipient countries and female researchers. We believe that the key measure of quality of research in all sciences (and especially in geographical information sciences) is in transparency and reproducibility of the computer code used to generate results (read more in: “Everyone has a right to know what is happening with the planet”).\nOpenLandMap represents data (global land mass), services and web-apps providing access and interactive visualizations of the Terabytes of high resolution data (1-km, 250-m, 100-m, 30-m or finer) produced by the OpenGeoHub Foundation and/or contributing organizations.\nOpenLandMap is an Open Land Data project, mainly inspired by the OpenStreetMap project: you are free to use OpenLandMap data for any purpose as long as you credit OpenLandMap and its contributors. If you alter or build upon the data in certain ways, you may distribute the result only under the same licence. See the Copyright and License page for details.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgments",
+    "href": "index.html#acknowledgments",
+    "title": "Welcome",
+    "section": "",
+    "text": "EarthMonitor.org project has received funding from the European Union’s Horizon Europe research an innovation programme under grant agreement No. 101059548.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "preface.html",
+    "href": "preface.html",
+    "title": "Preface",
+    "section": "",
+    "text": "This repository contains a review of Global in-situ Observations & Measurements networks and data sets, and a number of compiled and analysis ready point (spatial) data sets that can be used for training global spatial prediction models or similar analysis. It is has been developed for the purpose of building the www.OpenLandMap.org data sets, which is one of the main outputs of the Open-Earth-Monitor Cyberinfrastructure project.\nThe main objective of this compendium is to support a more reproducible and a more collaborative global modeling and analysis of environmental and Earth System Science variables. We believe that the key to making environmental data more trustworthy is by increasing its FAIRness (findability, accessibility, interoperability and reusability), and by enabling open development communities that freely exchange code and help make better open source software.\n\n\n\nWe provide code and examples of how to generate so-called Analysis-Ready training data sets. Some minimum conditions for a data set to be analysis ready include:\n\nIt requires no special pre-processing to remove artifacts, harmonize values within columns, bind or subset data;\nIt comes with extensive metadata so that there is no mistake about how was the data collected, prepared and distributed and by whom;\nIt is ready in some standard format e.g. GeoPackage; for large data sets we recommend using (open) cloud-native data formats to distribute data either Geoparquet, Flatgeobuf or similar;",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "preface.html#who-this-book-is-for",
+    "href": "preface.html#who-this-book-is-for",
+    "title": "Preface",
+    "section": "",
+    "text": "This repository contains a review of Global in-situ Observations & Measurements networks and data sets, and a number of compiled and analysis ready point (spatial) data sets that can be used for training global spatial prediction models or similar analysis. It is has been developed for the purpose of building the www.OpenLandMap.org data sets, which is one of the main outputs of the Open-Earth-Monitor Cyberinfrastructure project.\nThe main objective of this compendium is to support a more reproducible and a more collaborative global modeling and analysis of environmental and Earth System Science variables. We believe that the key to making environmental data more trustworthy is by increasing its FAIRness (findability, accessibility, interoperability and reusability), and by enabling open development communities that freely exchange code and help make better open source software.",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "preface.html#compiled-data-sets",
+    "href": "preface.html#compiled-data-sets",
+    "title": "Preface",
+    "section": "",
+    "text": "We provide code and examples of how to generate so-called Analysis-Ready training data sets. Some minimum conditions for a data set to be analysis ready include:\n\nIt requires no special pre-processing to remove artifacts, harmonize values within columns, bind or subset data;\nIt comes with extensive metadata so that there is no mistake about how was the data collected, prepared and distributed and by whom;\nIt is ready in some standard format e.g. GeoPackage; for large data sets we recommend using (open) cloud-native data formats to distribute data either Geoparquet, Flatgeobuf or similar;",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "12-dataset_lists.html",
+    "href": "12-dataset_lists.html",
+    "title": "Monitoring networks and datasets",
+    "section": "",
+    "text": "Description: Originally a plant root database but also contains some soil laboratory data and soil observations. Fully documented in Iversen et al. (2017).\n\n\n\n\n\nDistribution of FRED points. Image source: Oak Ridge National Laboratory.\n\n\n\n\n\n🔗 Project website: https://roots.ornl.gov/\n\n📂 Data download URL: https://doi.org/10.25581/ornlsfa.014/1459186\n\n🗞 Data license: https://roots.ornl.gov/guidelines/\n\n📕 Iversen, C. M., McCormack, M. L., Powell, A. S., Blackwood, C. B., Freschet, G. T., Kattge, J., … & Violle, C. (2017). A global Fine‐Root Ecology Database to address below‐ground challenges in plant ecology. New Phytologist, 215(1), 15-26.\n\n📍 Unique locations:\n\n📋 Unique complete rows: 150,000\n\n📝 Tutorials & documentation: https://roots.ornl.gov/guidelines/\n\n\n\n\nDescription: Raw soil nematode abundance data (6,825 samples) compiled by a large coalition of soil scientists / ecologists (Hoogen et al. 2020).\n\n\n\n\n\nDistribution of samples with soil nematodes abundance. Image source: Hoogen et al. (2020).\n\n\n\n\n\n🔗 Project website:\n\n📂 Data download URL: https://doi.org/10.6084/m9.figshare.c.4718003\n\n📰 Data license: CC-BY-SA\n\n📕 van den Hoogen, J., Geisen, S., Wall, D. H., Wardle, D. A., Traunspurger, W., de Goede, R. G., … & Crowther, T. W. (2020). A global database of soil nematode abundance and functional group composition. Scientific data, 7(1), 103.\n\n📍 Unique locations: 1,933 (1-km)\n\n📋 Unique complete rows:\n\n📝 Tutorials & documentation:\n\n\n\n\n\n\n\n\n\n\nDescription: Global Land Cover Estimation (GLanCE) project project provides almost 2M training points covering from years 1984 to 2020) (Stanimirova et al. 2023).\n\n\n\n\n\nDistribution of GLanCE points. Image source: https://www.nature.com/articles/s41597-023-02798-5/figures/5.\n\n\n\n\n\n🔗 Project website: https://sites.bu.edu/measures/\n\n📂 Data download URL: https://doi.org/10.34911/rdnt.x4xfh3\n\n🗞 Data license: CC-BY\n\n📕 Stanimirova, R., Tarrio, K., Turlej, K., McAvoy, K., Stonebrook, S., Hu, K. T., … & Friedl, M. A. (2023). A global land cover training dataset from 1984 to 2020. Scientific Data, 10(1), 879.\n\n📍 Unique locations: 2 million\n\n📋 Unique complete rows: +20 million\n\n📝 Tutorials & documentation: https://sites.bu.edu/measures/tools/\n\n\n\n\n\n\n\nDescription: Globe230k is a benchmark dataset for Global Land Cover Mapping which includes cca 230,000 annotated images with a size of 512 × 512 and a spatial resolution of 1-m (Shi et al. 2023).\n\n\n\n\n\nDistribution of Globe230k locations. Image source: Shi et al. (2023).\n\n\n\n\n\n🔗 Project website:\n\n📂 Data download URL: https://zenodo.org/doi/10.5281/zenodo.8429199\n\n📰 Data license: CC-BY\n\n📕 Shi, Q., He, D., Liu, Z., Liu, X., & Xue, J. (2023). Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping. Journal of Remote Sensing, 3, 0078.\n\n📍 Unique locations: 6,500\n\n📋 Unique complete rows: +1 billion\n\n📝 Tutorials & documentation:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDescription: Collection of marine species occurrence records from original and 3rd party sources GBIF, FishBASE (Global Information System on Fishes) and similar (Moudrỳ and Devillers 2020).\n\n\n\n\n\nDistribution of points for a species ‘Scomber colias’. Image source: https://obis.org/taxon/151174.\n\n\n\n\n\n🔗 Project website: https://obis.org/\n\n📂 Data download URL: https://obis.org/data/access/\n\n🗞 Data license: https://manual.obis.org/access\n\n📕 Moudrý, V., & Devillers, R. (2020). Quality and usability challenges of global marine biodiversity databases: An example for marine mammal data. Ecological Informatics, 56, 101051.\n\n📍 Unique locations:\n\n📋 Unique complete rows: +57 million records\n\n📝 Tutorials & documentation: https://manual.obis.org/access\n\n\n\n\nDescription: Global Runoff Data Centre (GRDC) collected 35 years of monthly and daily river discharge data from cca 11,000 permanent stations (Burek and Smilovic 2023).\n\n\n\n\n\nDistribution of GRDC points. Image source: Global Runoff Data Centre (GRDC).\n\n\n\n\n\n🔗 Project website: https://www.bafg.de/GRDC/\n\n📂 Data download URL: https://portal.grdc.bafg.de/applications/public.html\n\n📰 Data license: No commercial use of the data / No distribution of the entire database\n\n📕 Burek, P., & Smilovic, M. (2023). The use of GRDC gauging stations for calibrating large-scale hydrological models. Earth System Science Data, 15(12), 5617-5629.\n\n📍 Unique locations: 10,739\n\n📋 Unique complete rows: +1 million records\n\n📝 Tutorials & documentation: https://github.com/iiasa/CWATM_grdc_calibration_stations/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDescription: Contains daily data from over 9000 stations (data from 1973 to the present) on Mean temperature (.1 Fahrenheit) Mean dew point (.1 Fahrenheit) Mean sea level pressure (.1 mb) Mean station pressure (.1 mb) Mean visibility (.1 miles) Mean wind speed (.1 knots) Maximum sustained wind speed (.1 knots) Maximum wind gust (.1 knots) Maximum temperature (.1 Fahrenheit) Minimum temperature (.1 Fahrenheit) Precipitation amount (.01 inches) Snow depth (.1 inches) Indicator for occurrence of: Fog, Rain or Drizzle, Snow or Ice Pellets, Hail, Thunder and similar.\n\n\n\n\n\nDistribution of GSOD points. Image source: NOAA.\n\n\n\n\n\n🔗 Project website: https://catalog.data.gov/dataset/global-surface-summary-of-the-day-gsod/\n\n📂 Data download URL: https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/\n\n📰 Data license:\n\n📕 Sparks, A. H., Hengl, T., & Nelson, A. (2017). GSODR: global summary daily weather data in R. Journal of open source software, 2(10), 177.\n\n📍 Unique locations: +9000\n\n📋 Unique complete rows:\n\n📝 Tutorials & documentation: https://docs.ropensci.org/GSODR/\n\n\n\n\nDescription: Climate TRACE provides an inventory of major source of greenhouse gas (GHG) emissions around the world and provides independently produced estimates of how much each emits (points and polygons) (Whitmee, Anton, and Haines 2023).\n\n\n\n\n\nDistribution of Climate TRACE points. Image source: The Climate TRACE coalition.\n\n\n\n\n\n🔗 Project website: https://climatetrace.org/\n\n📂 Data download URL: https://climatetrace.org/data/\n\n🗞 Data license: https://roots.ornl.gov/guidelines/\n\n📕 Whitmee, S., Anton, B., & Haines, A. (2023). Accountability for carbon emissions and health equity. Bulletin of the World Health Organization, 101(2), 83.\n\n📍 Unique locations: 352 million emitting assets\n\n📋 Unique complete rows: +1 billion\n\n📝 Tutorials & documentation: https://api.climatetrace.org/v4/swagger/",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Monitoring networks and datasets"
+    ]
+  },
+  {
+    "objectID": "12-dataset_lists.html#geology-and-soils",
+    "href": "12-dataset_lists.html#geology-and-soils",
+    "title": "Monitoring networks and datasets",
+    "section": "",
+    "text": "Description: Originally a plant root database but also contains some soil laboratory data and soil observations. Fully documented in Iversen et al. (2017).\n\n\n\n\n\nDistribution of FRED points. Image source: Oak Ridge National Laboratory.\n\n\n\n\n\n🔗 Project website: https://roots.ornl.gov/\n\n📂 Data download URL: https://doi.org/10.25581/ornlsfa.014/1459186\n\n🗞 Data license: https://roots.ornl.gov/guidelines/\n\n📕 Iversen, C. M., McCormack, M. L., Powell, A. S., Blackwood, C. B., Freschet, G. T., Kattge, J., … & Violle, C. (2017). A global Fine‐Root Ecology Database to address below‐ground challenges in plant ecology. New Phytologist, 215(1), 15-26.\n\n📍 Unique locations:\n\n📋 Unique complete rows: 150,000\n\n📝 Tutorials & documentation: https://roots.ornl.gov/guidelines/\n\n\n\n\nDescription: Raw soil nematode abundance data (6,825 samples) compiled by a large coalition of soil scientists / ecologists (Hoogen et al. 2020).\n\n\n\n\n\nDistribution of samples with soil nematodes abundance. Image source: Hoogen et al. (2020).\n\n\n\n\n\n🔗 Project website:\n\n📂 Data download URL: https://doi.org/10.6084/m9.figshare.c.4718003\n\n📰 Data license: CC-BY-SA\n\n📕 van den Hoogen, J., Geisen, S., Wall, D. H., Wardle, D. A., Traunspurger, W., de Goede, R. G., … & Crowther, T. W. (2020). A global database of soil nematode abundance and functional group composition. Scientific data, 7(1), 103.\n\n📍 Unique locations: 1,933 (1-km)\n\n📋 Unique complete rows:\n\n📝 Tutorials & documentation:",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Monitoring networks and datasets"
+    ]
+  },
+  {
+    "objectID": "12-dataset_lists.html#land-cover-and-land-use",
+    "href": "12-dataset_lists.html#land-cover-and-land-use",
+    "title": "Monitoring networks and datasets",
+    "section": "",
+    "text": "Description: Global Land Cover Estimation (GLanCE) project project provides almost 2M training points covering from years 1984 to 2020) (Stanimirova et al. 2023).\n\n\n\n\n\nDistribution of GLanCE points. Image source: https://www.nature.com/articles/s41597-023-02798-5/figures/5.\n\n\n\n\n\n🔗 Project website: https://sites.bu.edu/measures/\n\n📂 Data download URL: https://doi.org/10.34911/rdnt.x4xfh3\n\n🗞 Data license: CC-BY\n\n📕 Stanimirova, R., Tarrio, K., Turlej, K., McAvoy, K., Stonebrook, S., Hu, K. T., … & Friedl, M. A. (2023). A global land cover training dataset from 1984 to 2020. Scientific Data, 10(1), 879.\n\n📍 Unique locations: 2 million\n\n📋 Unique complete rows: +20 million\n\n📝 Tutorials & documentation: https://sites.bu.edu/measures/tools/\n\n\n\n\n\n\n\nDescription: Globe230k is a benchmark dataset for Global Land Cover Mapping which includes cca 230,000 annotated images with a size of 512 × 512 and a spatial resolution of 1-m (Shi et al. 2023).\n\n\n\n\n\nDistribution of Globe230k locations. Image source: Shi et al. (2023).\n\n\n\n\n\n🔗 Project website:\n\n📂 Data download URL: https://zenodo.org/doi/10.5281/zenodo.8429199\n\n📰 Data license: CC-BY\n\n📕 Shi, Q., He, D., Liu, Z., Liu, X., & Xue, J. (2023). Globe230k: A Benchmark Dense-Pixel Annotation Dataset for Global Land Cover Mapping. Journal of Remote Sensing, 3, 0078.\n\n📍 Unique locations: 6,500\n\n📋 Unique complete rows: +1 billion\n\n📝 Tutorials & documentation:",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Monitoring networks and datasets"
+    ]
+  },
+  {
+    "objectID": "12-dataset_lists.html#water",
+    "href": "12-dataset_lists.html#water",
+    "title": "Monitoring networks and datasets",
+    "section": "",
+    "text": "Description: Collection of marine species occurrence records from original and 3rd party sources GBIF, FishBASE (Global Information System on Fishes) and similar (Moudrỳ and Devillers 2020).\n\n\n\n\n\nDistribution of points for a species ‘Scomber colias’. Image source: https://obis.org/taxon/151174.\n\n\n\n\n\n🔗 Project website: https://obis.org/\n\n📂 Data download URL: https://obis.org/data/access/\n\n🗞 Data license: https://manual.obis.org/access\n\n📕 Moudrý, V., & Devillers, R. (2020). Quality and usability challenges of global marine biodiversity databases: An example for marine mammal data. Ecological Informatics, 56, 101051.\n\n📍 Unique locations:\n\n📋 Unique complete rows: +57 million records\n\n📝 Tutorials & documentation: https://manual.obis.org/access\n\n\n\n\nDescription: Global Runoff Data Centre (GRDC) collected 35 years of monthly and daily river discharge data from cca 11,000 permanent stations (Burek and Smilovic 2023).\n\n\n\n\n\nDistribution of GRDC points. Image source: Global Runoff Data Centre (GRDC).\n\n\n\n\n\n🔗 Project website: https://www.bafg.de/GRDC/\n\n📂 Data download URL: https://portal.grdc.bafg.de/applications/public.html\n\n📰 Data license: No commercial use of the data / No distribution of the entire database\n\n📕 Burek, P., & Smilovic, M. (2023). The use of GRDC gauging stations for calibrating large-scale hydrological models. Earth System Science Data, 15(12), 5617-5629.\n\n📍 Unique locations: 10,739\n\n📋 Unique complete rows: +1 million records\n\n📝 Tutorials & documentation: https://github.com/iiasa/CWATM_grdc_calibration_stations/",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Monitoring networks and datasets"
+    ]
+  },
+  {
+    "objectID": "12-dataset_lists.html#climate",
+    "href": "12-dataset_lists.html#climate",
+    "title": "Monitoring networks and datasets",
+    "section": "",
+    "text": "Description: Contains daily data from over 9000 stations (data from 1973 to the present) on Mean temperature (.1 Fahrenheit) Mean dew point (.1 Fahrenheit) Mean sea level pressure (.1 mb) Mean station pressure (.1 mb) Mean visibility (.1 miles) Mean wind speed (.1 knots) Maximum sustained wind speed (.1 knots) Maximum wind gust (.1 knots) Maximum temperature (.1 Fahrenheit) Minimum temperature (.1 Fahrenheit) Precipitation amount (.01 inches) Snow depth (.1 inches) Indicator for occurrence of: Fog, Rain or Drizzle, Snow or Ice Pellets, Hail, Thunder and similar.\n\n\n\n\n\nDistribution of GSOD points. Image source: NOAA.\n\n\n\n\n\n🔗 Project website: https://catalog.data.gov/dataset/global-surface-summary-of-the-day-gsod/\n\n📂 Data download URL: https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/\n\n📰 Data license:\n\n📕 Sparks, A. H., Hengl, T., & Nelson, A. (2017). GSODR: global summary daily weather data in R. Journal of open source software, 2(10), 177.\n\n📍 Unique locations: +9000\n\n📋 Unique complete rows:\n\n📝 Tutorials & documentation: https://docs.ropensci.org/GSODR/\n\n\n\n\nDescription: Climate TRACE provides an inventory of major source of greenhouse gas (GHG) emissions around the world and provides independently produced estimates of how much each emits (points and polygons) (Whitmee, Anton, and Haines 2023).\n\n\n\n\n\nDistribution of Climate TRACE points. Image source: The Climate TRACE coalition.\n\n\n\n\n\n🔗 Project website: https://climatetrace.org/\n\n📂 Data download URL: https://climatetrace.org/data/\n\n🗞 Data license: https://roots.ornl.gov/guidelines/\n\n📕 Whitmee, S., Anton, B., & Haines, A. (2023). Accountability for carbon emissions and health equity. Bulletin of the World Health Organization, 101(2), 83.\n\n📍 Unique locations: 352 million emitting assets\n\n📋 Unique complete rows: +1 billion\n\n📝 Tutorials & documentation: https://api.climatetrace.org/v4/swagger/",
+    "crumbs": [
+      "Home",
+      "Original data sets",
+      "Monitoring networks and datasets"
+    ]
   }
 ]

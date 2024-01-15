@@ -1,0 +1,1 @@
+Sitemap: https://openlandmap.github.io/compiled-ess-point-data-sets/sitemap.xml

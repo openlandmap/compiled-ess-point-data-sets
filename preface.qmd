@@ -5,10 +5,15 @@
 This repository contains a review of Global in-situ Observations & Measurements 
 networks and data sets, and a number of compiled and analysis ready point (spatial) 
 data sets that can be used for training global spatial prediction models or similar 
-analysis. It is has been developed within the www.OpenLandMap.org and Open-Earth-Monitor 
-Cyberinfrastructure projects (https://earthmonitor.org). The main objective of this 
-compendium is to support a more reproducible and a more collaborative global modeling 
-and analysis of environmental and Earth System Science variables.
+analysis. It is has been developed for the purpose of building the www.OpenLandMap.org 
+data sets, which is one of the main outputs of the [Open-Earth-Monitor Cyberinfrastructure project](https://earthmonitor.org). 
+
+The main objective of this compendium is to support a more reproducible and a more 
+collaborative global modeling and analysis of environmental and Earth System Science variables. 
+We believe that the key to making environmental data more trustworthy is by 
+increasing its **FAIRness** (findability, accessibility, interoperability and reusability), 
+and by enabling open development communities that freely exchange code and help make better 
+open source software.
 
 ## Compiled data sets
 
@@ -17,4 +22,4 @@ data sets**. Some minimum conditions for a data set to be analysis ready include
 
 -  It requires no special pre-processing to remove artifacts, harmonize values within columns, bind or subset data;
 -  It comes with extensive metadata so that there is no mistake about how was the data collected, prepared and distributed and by whom;
--  It is ready in some standard format e.g. GeoPackage or GeoParquet; we recommend using **(open) cloud-native data formats** to distribute data (especially for large data) either [Geoparquet](https://geoparquet.org/) / [Flatgeobuf](https://flatgeobuf.org/) and similar;
+-  It is ready in some standard format e.g. [GeoPackage](https://www.geopackage.org/); for large data sets we recommend using **(open) cloud-native data formats** to distribute data either [Geoparquet](https://geoparquet.org/), [Flatgeobuf](https://flatgeobuf.org/) or similar;

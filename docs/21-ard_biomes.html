@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -74,10 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:description" content="A compendium of Global in-situ Earth System Science Observations &amp; Measurments networks and data sets. The compiled data sets are intended to be analysis-ready and are used to produce global predictions of various layers published via OpenLandMap.org.">
 <meta property="og:site_name" content="Open Land Data services">
 <meta name="twitter:title" content="Open Land Data services">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://openlandmap.github.io/compiled-ess-point-data-sets/images/cover.png">
-<meta name="twitter:image-height" content="1407">
-<meta name="twitter:image-width" content="1094">
+<meta name="twitter:image" content="images/cover.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -148,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Original data sets</a></li><li class="breadcrumb-item"><a href="./11-dataset_communities.html">Data communities</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./21-ard_biomes.html">Compiled data sets</a></li><li class="breadcrumb-item"><a href="./21-ard_biomes.html">Training points for mapping biomes</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -183,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./11-dataset_communities.html" class="sidebar-item-text sidebar-link active">
+  <a href="./11-dataset_communities.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data communities</span></a>
   </div>
 </li>
@@ -206,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./21-ard_biomes.html" class="sidebar-item-text sidebar-link">
+  <a href="./21-ard_biomes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Training points for mapping biomes</span></a>
   </div>
 </li>
@@ -222,21 +239,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-communities" id="toc-data-communities" class="nav-link active" data-scroll-target="#data-communities">Data communities</a>
+  <li><a href="#training-points-for-mapping-biomes" id="toc-training-points-for-mapping-biomes" class="nav-link active" data-scroll-target="#training-points-for-mapping-biomes">Training points for mapping biomes</a>
   <ul class="collapse">
-  <li><a href="#degree-confluence-project" id="toc-degree-confluence-project" class="nav-link" data-scroll-target="#degree-confluence-project">Degree Confluence project</a></li>
-  <li><a href="#european-marine-observation-and-data-network-emodnet" id="toc-european-marine-observation-and-data-network-emodnet" class="nav-link" data-scroll-target="#european-marine-observation-and-data-network-emodnet">European Marine Observation and Data Network (EMODnet)</a></li>
-  <li><a href="#fluxnet-global-network" id="toc-fluxnet-global-network" class="nav-link" data-scroll-target="#fluxnet-global-network">FLUXNET global network</a></li>
-  <li><a href="#fluxnet-global-network-1" id="toc-fluxnet-global-network-1" class="nav-link" data-scroll-target="#fluxnet-global-network-1">FLUXNET global network</a></li>
-  <li><a href="#global-biodiversity-information-facility-gbif" id="toc-global-biodiversity-information-facility-gbif" class="nav-link" data-scroll-target="#global-biodiversity-information-facility-gbif">Global Biodiversity Information Facility (GBIF)</a></li>
-  <li><a href="#geo-wiki" id="toc-geo-wiki" class="nav-link" data-scroll-target="#geo-wiki">Geo-wiki</a></li>
-  <li><a href="#international-soil-moisture-network" id="toc-international-soil-moisture-network" class="nav-link" data-scroll-target="#international-soil-moisture-network">International Soil Moisture Network</a></li>
-  <li><a href="#international-soil-carbon-network" id="toc-international-soil-carbon-network" class="nav-link" data-scroll-target="#international-soil-carbon-network">International Soil Carbon Network</a></li>
-  <li><a href="#long-term-ecological-research-lter-network" id="toc-long-term-ecological-research-lter-network" class="nav-link" data-scroll-target="#long-term-ecological-research-lter-network">Long Term Ecological Research (LTER) Network</a></li>
-  <li><a href="#wmo-global-observatory-system" id="toc-wmo-global-observatory-system" class="nav-link" data-scroll-target="#wmo-global-observatory-system">WMO Global Observatory System</a></li>
+  <li><a href="#backgrounds" id="toc-backgrounds" class="nav-link" data-scroll-target="#backgrounds">Backgrounds</a></li>
+  <li><a href="#processing-steps" id="toc-processing-steps" class="nav-link" data-scroll-target="#processing-steps">Processing steps</a></li>
+  <li><a href="#how-to-cite" id="toc-how-to-cite" class="nav-link" data-scroll-target="#how-to-cite">How to cite</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/openlandmap/compiled-ess-point-data-sets/edit/main/11-dataset_communities.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/openlandmap/compiled-ess-point-data-sets/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/openlandmap/compiled-ess-point-data-sets/edit/main/21-ard_biomes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/openlandmap/compiled-ess-point-data-sets/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -244,54 +254,53 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="data-communities" class="level1">
-<h1>Data communities</h1>
-<p>To follow progress of the soil data compilations consider connecting to some of the active communities / registering for the mailing lists and/or discussion groups. Provided list is sorted alhpabetically.</p>
-<section id="degree-confluence-project" class="level2">
-<h2 class="anchored" data-anchor-id="degree-confluence-project">Degree Confluence project</h2>
-<p><a href="http://confluence.org/">Degree Confluence project</a></p>
+<section id="training-points-for-mapping-biomes" class="level1">
+<h1>Training points for mapping biomes</h1>
+<section id="backgrounds" class="level2">
+<h2 class="anchored" data-anchor-id="backgrounds">Backgrounds</h2>
+<p>This script explains steps used to produce a compilation of training points to map global biomes. These steps are also explained in detail in <span class="citation" data-cites="hengl2018global">Hengl et al. (<a href="#ref-hengl2018global" role="doc-biblioref">2018</a>)</span>. The biomes data set is also explained in detail in <span class="citation" data-cites="bonannella2023biomes">Bonannella et al. (<a href="#ref-bonannella2023biomes" role="doc-biblioref">2023</a>)</span>.</p>
 </section>
-<section id="european-marine-observation-and-data-network-emodnet" class="level2">
-<h2 class="anchored" data-anchor-id="european-marine-observation-and-data-network-emodnet">European Marine Observation and Data Network (EMODnet)</h2>
-<p><a href="https://emodnet.ec.europa.eu/en">European Marine Observation and Data Network (EMODnet)</a> gathers</p>
+<section id="processing-steps" class="level2">
+<h2 class="anchored" data-anchor-id="processing-steps">Processing steps</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pnv_biomes.pnts_sites.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>ARD training points for mapping biomes.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="fluxnet-global-network" class="level2">
-<h2 class="anchored" data-anchor-id="fluxnet-global-network">FLUXNET global network</h2>
-<p><a href="https://fluxnet.fluxdata.org/">FLUXNET global network</a></p>
-</section>
-<section id="fluxnet-global-network-1" class="level2">
-<h2 class="anchored" data-anchor-id="fluxnet-global-network-1">FLUXNET global network</h2>
-<p><a href="https://fluxnet.fluxdata.org/">FLUXNET global network</a> <a href="https://ameriflux.lbl.gov/about/about-ameriflux/">AmeriFlux</a></p>
-</section>
-<section id="global-biodiversity-information-facility-gbif" class="level2">
-<h2 class="anchored" data-anchor-id="global-biodiversity-information-facility-gbif">Global Biodiversity Information Facility (GBIF)</h2>
-<p><a href="https://www.gbif.org">Global Biodiversity Information Facility (GBIF)</a></p>
-</section>
-<section id="geo-wiki" class="level2">
-<h2 class="anchored" data-anchor-id="geo-wiki">Geo-wiki</h2>
-<p><a href="https://www.geo-wiki.org/pages/data">Geo-wiki data sets</a></p>
-</section>
-<section id="international-soil-moisture-network" class="level2">
-<h2 class="anchored" data-anchor-id="international-soil-moisture-network">International Soil Moisture Network</h2>
-<p><a href="https://ismn.geo.tuwien.ac.at/en/">International Soil Moisture Network</a></p>
-</section>
-<section id="international-soil-carbon-network" class="level2">
-<h2 class="anchored" data-anchor-id="international-soil-carbon-network">International Soil Carbon Network</h2>
-<p><a href="http://iscn.fluxdata.org/">International Soil Carbon Network</a></p>
-</section>
-<section id="long-term-ecological-research-lter-network" class="level2">
-<h2 class="anchored" data-anchor-id="long-term-ecological-research-lter-network">Long Term Ecological Research (LTER) Network</h2>
-<p><a href="https://lternet.edu/site/">Long Term Ecological Research (LTER) Network sites</a> <a href="https://www.neonscience.org/data">The National Ecological Observatory Network (NEON)</a>, <a href="https://www.lter-europe.net/">Long-Term Ecosystem Research in Europe (eLTER)</a> <a href="http://www.cern.ac.cn/0index/index.asp">Chinese Ecosystem Research Network (CERN)</a> <a href="https://portal.tern.org.au/">Terrestrial Ecosystem Research Network (TERN) Australia</a></p>
-</section>
-<section id="wmo-global-observatory-system" class="level2">
-<h2 class="anchored" data-anchor-id="wmo-global-observatory-system">WMO Global Observatory System</h2>
-<p><a href="http://public.wmo.int/en/programmes/global-observing-system">WMO Global Observatory System</a></p>
+<section id="how-to-cite" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-cite">How to cite</h2>
+<p>To cite this data set please use:</p>
+<pre><code>@book{pnv.biomes_2023,
+  author       = {Hengl, T.},
+  title        = {{Potential distribution of biomes (Potential 
+                   Natural Vegetation) at 250 m spatial resolution}},
+  year         = {2024},
+  publisher    = {OpenGeoHub foundation},
+  address      = {Wageningen},
+  version      = {v0.2},
+  doi          = {10.5281/zenodo.3526620},
+  url          = {https://openlandmap.github.io/compiled-ess-point-data-sets/}
+}</code></pre>
+
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bonannella2023biomes" class="csl-entry" role="listitem">
+Bonannella, Carmelo, Tomislav Hengl, Leandro Parente, and Sytze de Bruin. 2023. <span>“Biomes of the World Under Climate Change Scenarios: Increasing Aridity and Higher Temperatures Lead to Significant Shifts in Natural Vegetation.”</span> <em>PeerJ</em> 11: e15593. <a href="https://doi.org/10.7717/peerj.15593">https://doi.org/10.7717/peerj.15593</a>.
+</div>
+<div id="ref-hengl2018global" class="csl-entry" role="listitem">
+Hengl, Tomislav, Markus G Walsh, Jonathan Sanderman, Ichsani Wheeler, Sandy P Harrison, and Iain C Prentice. 2018. <span>“Global Mapping of Potential Natural Vegetation: An Assessment of Machine Learning Algorithms for Estimating Land Potential.”</span> <em>PeerJ</em> 6: e5457. <a href="https://doi.org/10.7717/peerj.5457">https://doi.org/10.7717/peerj.5457</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -826,7 +835,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/openlandmap/compiled-ess-point-data-sets/edit/main/11-dataset_communities.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/openlandmap/compiled-ess-point-data-sets/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/openlandmap/compiled-ess-point-data-sets/edit/main/21-ard_biomes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/openlandmap/compiled-ess-point-data-sets/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

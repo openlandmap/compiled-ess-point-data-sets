@@ -10,17 +10,30 @@ soil variables [@batjes2017wosis; @hengl2017soilgrids250m; @panagos2017global], 
 dynamics [@pena2018synergies], and measurements of fluxes and ecosystem services [@ukkola2017fluxnetlsm; @kulmala2018build; @essd-2020-136], 
 although the list will be continuously updated and extended. 
 
+<a href="https://opengeohub.org/contribute-training-data-openlandmap/"><img src="./images/cover.png" alt="OpenLandMap training points banner" width="300"></a>
+
+If your work / products are cited here, you are for us **a champion of open environmental data** and 
+we are enormously thankful for your contributions (please never stop!).
+
 For practical purposes, we have organized the monitoring networks and data sets around the following themes 
 (based on the [UN-GGIM The Global Fundamental Geospatial Data Themes](https://ggim.un.org/meetings/GGIM-committee/9th-Session/documents/Fundamental_Data_Publication.pdf)):
-- Buildings and Settlements,
-- Elevation and Depth,
-- Geology and Soils,
-- Land Cover and Land Use,
-- Population Distribution,
-- Water,
-- Physical Infrastructure,
-- Climate (_added entry_),
-- Biodiversity and Nature Conservation (_added entry_),
+
+-  Buildings and Settlements,
+-  Elevation and Depth,
+-  Geology and Soils,
+-  Land Cover and Land Use,
+-  Population Distribution,
+-  Water,
+-  Physical Infrastructure,
+-  Climate (_added entry_),
+-  Biodiversity and Nature Conservation (_added entry_),
+
+We also distinguish between three main types of global data sets:
+
+1. **Global Permanent Monitoring Networks**: here we only consider monitoring networks that still collect in-situ Observations & Measurements and where the data is imported, quality controlled and served by a national or international organization.
+2. **Global (original) reference data sets**: these are original data sets usually produced by a single group or project (hence NOT compilations!) that are global, but no new data is added these can NOT be classified as monitoring networks.
+3. **Global compilations of data sets**: these are combinations of data from various sources combined / bind together to produce a single analysis-ready data set; can be considered of lowest quality from the three types listed.
+
 
 ## Download compiled data {.unnumbered}
 

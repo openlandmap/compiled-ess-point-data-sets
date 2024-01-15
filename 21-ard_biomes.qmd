@@ -1,0 +1,31 @@
+# Training points for mapping biomes
+
+## Backgrounds
+
+This script explains steps used to produce a compilation of training points to 
+map global biomes. These steps are also explained in detail in @hengl2018global. 
+The biomes data set is also explained in detail in @bonannella2023biomes.
+
+## Processing steps
+
+```{r essds-biomes, echo=FALSE, fig.cap="ARD training points for mapping biomes.", out.width="100%"}
+knitr::include_graphics("images/pnv_biomes.pnts_sites.png")
+```
+
+## How to cite 
+
+To cite this data set please use:
+
+```
+@book{pnv.biomes_2023,
+  author       = {Hengl, T.},
+  title        = {{Potential distribution of biomes (Potential 
+                   Natural Vegetation) at 250 m spatial resolution}},
+  year         = {2024},
+  publisher    = {OpenGeoHub foundation},
+  address      = {Wageningen},
+  version      = {v0.2},
+  doi          = {10.5281/zenodo.3526620},
+  url          = {https://openlandmap.github.io/compiled-ess-point-data-sets/}
+}
+```
